@@ -245,3 +245,15 @@ ul li span
     margin-left: 20px;
     color: #fff;
 }
+
+@media print 
+{
+    body, #content, h1, h1::after{
+        background-color: #fff;
+        color: #000 !important;
+    }
+    h1::after
+    {
+        border: none;
+    }
+}
