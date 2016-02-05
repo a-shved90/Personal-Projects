@@ -1,259 +1,369 @@
 @font-face {
-    font-family: 'lovelo_line_light';
-    src: url('../fonts/lovelo_line_light-webfont.eot');
-    src: url('../fonts/lovelo_line_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/lovelo_line_light-webfont.woff') format('woff'),
-         url('../fonts/lovelo_line_light-webfont.ttf') format('truetype'),
-         url('../fonts/lovelo_line_light-webfont.svg#loveloline_light') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'lovelo_line_light';
+	src: url('../fonts/lovelo_line_light-webfont.eot');
+	src: url('../fonts/lovelo_line_light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/lovelo_line_light-webfont.woff') format('woff'),
+		 url('../fonts/lovelo_line_light-webfont.ttf') format('truetype'),
+		 url('../fonts/lovelo_line_light-webfont.svg#loveloline_light') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'raleway_reg';
-    src: url('../fonts/raleway-regular-webfont.eot');
-    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-regular-webfont.woff') format('woff'),
-         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
-         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'raleway_reg';
+	src: url('../fonts/raleway-regular-webfont.eot');
+	src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/raleway-regular-webfont.woff') format('woff'),
+		 url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'raleway_bold';
-    src: url('../fonts/raleway-bold-webfont.eot');
-    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-bold-webfont.woff') format('woff'),
-         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
-         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'raleway_bold';
+	src: url('../fonts/raleway-bold-webfont.eot');
+	src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/raleway-bold-webfont.woff') format('woff'),
+		 url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+		 url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 html, body
 {
-    background: #e8e8e8;
-    background: -moz-linear-gradient(top,  #e8e8e8 0%, #b7b7b7 40%, #b7b7b7 60%, #e8e8e8 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e8), color-stop(40%,#b7b7b7), color-stop(60%,#b7b7b7), color-stop(100%,#e8e8e8));
-    background: -webkit-linear-gradient(top,  #e8e8e8 0%,#b7b7b7 40%,#b7b7b7 60%,#e8e8e8 100%);
-    background: -o-linear-gradient(top,  #e8e8e8 0%,#b7b7b7 40%,#b7b7b7 60%,#e8e8e8 100%);
-    background: -ms-linear-gradient(top,  #e8e8e8 0%,#b7b7b7 40%,#b7b7b7 60%,#e8e8e8 100%);
-    background: linear-gradient(to bottom,  #e8e8e8 0%,#b7b7b7 40%,#b7b7b7 60%,#e8e8e8 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#e8e8e8',GradientType=0 );
-    height: 100%;
+	background: #e8e8e8;
+	background: -moz-linear-gradient(top,  #e8e8e8 0%, #b7b7b7 40%, #b7b7b7 60%, #e8e8e8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e8), color-stop(40%,#b7b7b7), color-stop(60%,#b7b7b7), color-stop(100%,#e8e8e8));
+	background: -webkit-linear-gradient(top,  #e8e8e8 0%,#b7b7b7 40%,#b7b7b7 60%,#e8e8e8 100%);
+	background: -o-linear-gradient(top,  #e8e8e8 0%,#b7b7b7 40%,#b7b7b7 60%,#e8e8e8 100%);
+	background: -ms-linear-gradient(top,  #e8e8e8 0%,#b7b7b7 40%,#b7b7b7 60%,#e8e8e8 100%);
+	background: linear-gradient(to bottom,  #e8e8e8 0%,#b7b7b7 40%,#b7b7b7 60%,#e8e8e8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#e8e8e8',GradientType=0 );
 }
 
 body
 {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    padding: 0;
-    font-family: raleway_reg;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	padding: 0;
+	font-family: raleway_reg;
 }
 
 #content
 {
-    width:1080px;
-    min-height:100%;
-    margin: 0 auto;
-    background: #74979D;
-    position: relative;
+	max-width:1280px;
+	min-height:100%;
+	margin: 0 auto;
+	background: #74979D;
+	position: relative;
 }
 
-#content::after, nav::after /* clear after floats */
+#content::after
 {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }
-
-nav
-{
-    padding: 20px 60px 0;
-}
-
-nav a
-{
-    float: left;
-    width: 100px;
-    height: 50px;
-    margin: 5px;
-    border: 1px solid #383B3C;
-    text-align: center;
-    line-height: 50px;
-    text-decoration: none;
-    color: #fff;
-}
-
-nav a[href="index.html"] {background-color: #4e7097;}
-nav a[href="media.html"] {background-color: #8A2623;}
-nav a[href="portfolio.html"] {background-color: #CA7100;}
-nav a[href="cv.html"] {background-color: #74979D;}
-nav a[href="contact.html"] {background-color: #008144;}
 
 h1 /* Only used for name header */
 {
-    font-family: "lovelo_line_light";
-    letter-spacing: 10px;
-    font-size: 70px;
-    margin: 50px 0;
-    font-weight: normal;
-    text-align: left;
-    position: relative;
+	font-family: "lovelo_line_light";
+	letter-spacing: 10px;
+	font-size: 70px;
+	margin: 50px 0;
+	font-weight: normal;
+	text-align: left;
+	position: relative;
 }
 
 h1::after
 {
-    content: "CV";
-    padding: 0 30px 0 10px;
-    margin: 0;
-    width: 65px;
-    height: 0;
+	content: "CV";
+	padding: 0 30px 0 10px;
+	margin: 0;
+	width: 65px;
+	height: 0;
 	display: block;
 	color: #fff;
 	position: absolute;
 	top: -35px;
 	right: 50px;
 	text-decoration: none;
-    font-family: raleway_reg;
+	font-family: raleway_reg;
 	font-size: 25px;
 	letter-spacing: 3px;
 	text-align: center;
-    line-height: 2px;
-    background: #383B3C;
-    -webkit-transform: rotate(-90deg);
-    border-top: 29px solid transparent;
+	line-height: 2px;
+	background: #383B3C;
+	-webkit-transform: rotate(-90deg);
+	border-top: 29px solid transparent;
 	border-bottom: 30px solid transparent;
 	border-left: 30px solid #74979D;
 }
 
 h2, h3, h4
 {
-    font-family: raleway_reg;
-    text-transform: uppercase;
+	font-family: raleway_reg;
+	text-transform: uppercase;
 }
 
 h2
 {
-    background: #383B3C;
-    color: #fff;
-    font-weight: normal;
-    padding: 7px 20px;
-    font-size: 16px;
-    letter-spacing: 1px;
+	background: #383B3C;
+	color: #fff;
+	font-weight: normal;
+	padding: 7px 20px;
+	font-size: 16px;
+	letter-spacing: 1px;
 }
 
 #cv_left h2
 {
-    text-align: right;
-    border-radius: 0 5px 5px 0;
+	text-align: right;
+	border-radius: 0 5px 5px 0;
 }
 
 #cv_right h2
 {
-    text-align: left;
-    border-radius: 5px 0 0 5px;
+	text-align: left;
+	border-radius: 5px 0 0 5px;
 }
 
 h3
 {
-    text-align: left;
-    margin-bottom: 0;
+	text-align: left;
+	margin-bottom: 0;
 }
 
 h3 span
 {
-    color: #383B3C;
+	color: #383B3C;
 }
 
 h4
 {
-    margin-top: 0;
-    font-size: 14px;
-    text-align: left;
-    color: #383B3C;
+	margin-top: 0;
+	font-size: 14px;
+	text-align: left;
+	color: #383B3C;
+}
+
+a{
+	color: #383B3C;
+}
+
+a:hover{
+	color: #fff;
 }
 
 #cv_left
 {
-    float: left;
-    width: 350px;
-    position: relative;
-    z-index: 10;
-    margin-top: 150px;
+	float: left;
+	width: 35%;
+	position: relative;
+	z-index: 10;
+	margin-top: 150px;
 }
 
 #cv_right
 {
-    float: right;
-    width: 650px;
+	float: right;
+	width: 55%;
 }
 
 #cv_left p
 {
-    width: 250px;
-    padding-left: 100px;
-    text-align: left;
+	width: calc(100% - 100px);
+	margin-left: 100px;
+	text-align: left;
 }
 #cv_right p
 {
-    width: 500px;
-    text-align: left;
+	width: calc(100% - 100px);
+	margin-right: 100px;
+	text-align: left;
 }
 
-.email
+#cv_right p, #cv_left p{
+	font-size: 16px;
+}
+
+#cv_left p.email
 {
-    text-align: right !important;
-    width: 220px;
-    margin: 0 0 -10px 0;
+	text-align: right;
+	display: block;
+	width: 100%;
+	margin: 0 0 -10px 0;
 }
 
 .email a
 {
-    text-decoration: none;
-    color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 
 .skills h3
 {
-    text-align: center;
+	text-align: center;
+}
+
+.more{
+	position: relative;
+	cursor: pointer;
+}
+
+.more::after{
+	content: "\25BC";
+	position: absolute;
+	right: -50px;
+	top: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	background: #383B3C;
+	line-height: 20px;
+	font-size: 30px;
+	padding: 6px 5px 3px 7px;
+	border-radius: 5px;
+}
+
+.more.active::after{
+	content: "\25B2";
+	padding: 7px 5px 2px 7px;
+}
+
+.hide, .show{
+	overflow: hidden;
+	-webkit-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+
+.hide p:first-of-type, .show p:first-of-type{
+	margin-top: 0;
+}
+
+.hide{
+	max-height: 0;
+}
+
+.show{
+	max-height: 700px;
 }
 
 ul
 {
-    padding: 0;
-    list-style: none;
-    color: #383B3C;
-    font-family: raleway_bold;
+	padding: 0;
+	list-style: none;
+	color: #383B3C;
+	font-family: raleway_bold;
 }
 
 ul li
 {
-    text-align: right;
+	text-align: right;
 }
 
 ul li span
 {
-    text-align: left;
-    display: inline-block;
-    width:155px;
-    margin-left: 20px;
-    color: #fff;
+	text-align: left;
+	display: inline-block;
+	width: 50%;
+	margin-left: 20px;
+	color: #fff;
 }
 
-@media print 
-{
-    body, #content, h1, h1::after{
-        background-color: #fff;
-        color: #000 !important;
-    }
-    h1::after
-    {
-        border: none;
-    }
+@media all and (max-width: 1024px){
+	h1::after{
+		display: none;
+	}
+	h1{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		left: 20px;
+		text-align: center;
+		margin: 0;
+	}
+	ul{
+		width: 320px;
+		margin: 0 auto;
+		padding: 10px 0 10px 25px;
+	}
+
+	ul li{
+		font-size: 14px;
+	}
+	#cv_left p.email{
+		padding-right: 40px;
+	}
+	#cv_right p.more{
+		width: calc(100% - 110px);
+		margin-right: 70px;
+		margin-bottom: 0;
+	}
+	#cv_left, #cv_right{
+		width: 100%;
+		float: none;
+		display: block;
+	}
+	#cv_left p, #cv_right p{
+		margin: 20px auto;
+		width: calc(100% - 80px);
+	}
+	#cv_right p:last-of-type{
+		margin-bottom: 0;
+	}
+	#cv_right{
+		padding-bottom: 40px;
+	}
+	#cv_left{
+		margin: 0;
+		padding-top: 200px;
+	}
+	#cv_left h2, #cv_left h3, #cv_left h4{
+		margin-right: 40px;
+	}
+	#cv_right h2, #cv_right h3, #cv_right h4{
+		margin-left: 40px;
+	}
+}
+
+@media all and (max-width: 768px){
+	h1{
+		font-size: 35px;
+	}
+	#cv_left{
+		padding-top: 110px;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .more::after{
+		font-size: 17px;
+	}
+}
+
+@media print {
+	body, #content, h1, h1::after{
+		background-color: #fff;
+		color: #000 !important;
+	}
+	h1::after
+	{
+		border: none;
+	}
 }

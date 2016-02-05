@@ -1,0 +1,47 @@
+
+html{
+	min-height: calc(100% + 1px);
+}
+body{
+	background: #eee;
+}
+
+main{
+	background: white;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.main-container{
+	clear: both;
+}
+
+.main-container div{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+}
+
+.main-container img{
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	background: #ddd;
+	padding-bottom: 50%;
+}
+
+.main-container a{
+	display: block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.main-container a p{
+	height: 3em;
+	overflow: hidden;
+}
+
+.main-container a:hover p{
+	height: auto;
+	overflow: visible;
+}
