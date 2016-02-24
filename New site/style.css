@@ -1,92 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:600,300);
+
 *{
 	box-sizing: border-box;
+	-webkit-transition: all ease 0.3s;
+	transition: all ease 0.3s;
 }
 
 html{
 	min-height: 100%;
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #1a1a1a;
 }
 body{
-	background: #eee;
-	margin: 0;
-	padding: 0;
-	border-top: 10px solid blue;
+	width: 100%;
+	margin: 0 auto 1.3em;
+	padding: 0 1.3em;
 }
 
-nav, header, main, footer{
-	display: block;
-	width: 960px;
-	margin: 0 auto;
+h1, h2, h3, h4, h5, h6{
+	font-weight: 600;
+	margin: 0.45em 0;
+	font-size: 1.4em;
 }
 
-nav{
-	text-align: center;
+a{
+	text-decoration: none;
+	color: red;
 }
 
-nav a{
+a:hover, a:focus{
+	text-decoration: underline;
+	color: blue;
+}
+
+a.btn{
 	display: inline-block;
-	padding: 10px;
+	font-size: 1em;
+	padding: 0.7em 0.9em 0.6em;
+	border: 1px solid red;
+	color: #fff;
+	background: red;
+}
+
+a.btn:hover{
+	background: #fff;
+	color: red;
+}
+
+p{
+	font-size: 1em;
+	margin: 0 0 1.35em;
+	line-height: 1.6em;
+}
+
+/* TODO blockquote */
+
+header, main, footer{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	vertical-align: top;
+}
+
+header nav{
+	vertical-align: top;
+	display: inline-block;
+	float: right;
+	margin: 0.65em auto 0;
+}
+
+header nav a{
+	display: inline-block;
+	padding: 0.6em;
 	background: #fff;
 }
 
-nav a:link, nav a:visited {
-	color: red;
+header nav a:link, header nav a:visited {
 	text-decoration: none;
 	cursor: auto;
 }
 
-nav a:link:hover, nav a:visited:hover {
+header nav a:link:hover, header nav a:visited:hover {
 	color: black;
 }
 
-blockquote{
-	margin-left: 20px;
-	border-left: 1px solid black;
-	padding-left: 20px
+.title-author{
+	display: inline-block;
+	text-align: left;
 }
-
-blockquote cite{
+.title-author span{
 	display: block;
+	font-size: 0.6em;
 	text-align: right;
+	margin-right: -5em;
 }
 
 main{
 	background: white;
-	width: 960px;
+	width: 100%;
 	margin: 0 auto;
-	padding: 20px;
-	border-left: 10px solid blue;
 }
 
-.main-container{
+.section-list:after{
+	content: "";
+	display: table;
 	clear: both;
 }
 
-.main-container div{
-	display: inline-block;
-	width: 33%;
+.section-list div{
+	float: left;
 	vertical-align: top;
+	width: 100%;
+	color: #000;
+	margin-bottom: 2.5em;
 }
 
-.main-container img{
+.section-list div img{
 	display: block;
-	width: 50%;
+	width: 100%;
+	border-radius: 100%;
 	margin: 0 auto;
-	background: #ddd;
-	padding-bottom: 50%;
 }
 
-.main-container a{
-	display: block;
+.section-list div h3{
 	text-align: center;
-	vertical-align: top;
+	margin: 1.12em 0 0.85em;
 }
 
-.main-container a p{
-	height: 3em;
-	overflow: hidden;
+.section-list div p{
+	text-align: justify;
 }
 
-.main-container a:hover p{
-	height: auto;
-	overflow: visible;
+@media all and (min-width: 768px){
+	body{
+		padding: 0 40px;
+	}
+	.section-list div{
+		width: 46%;
+		width: calc((100% - 40px) / 2);
+	}
+	.section-list div:first-of-type{
+		margin-right: 40px;
+	}
+	.section-list div:last-of-type{
+		margin-left: 40px;
+	}
+}
+
+@media all and (min-width: 1024px){
+	.section-list div{
+		width: 20%;
+		width: calc((100% - 160px) / 4);
+		margin: 0 20px;
+	}
+	.section-list div:first-of-type{
+		margin-right: 20px;
+	}
+	.section-list div:last-of-type{
+		margin-left: 20px;
+	}
+}
+
+@media all and (min-width: 1280px){
+	body{
+		padding: 0 100px;
+	}
+}
+
+@media all and (min-width: 1600px){
+	body{
+		padding: 0 200px;
+	}
+}
+
+@media all and (min-width: 1900px){
+	body{
+		padding: 0 400px;
+	}
 }
