@@ -64,10 +64,10 @@
 
 		<artile class="section-list">
 			<div>
-				<a href="history.html"><img src='http://lorempixel.com/500/500/sports/' /></a>
-				<h3>History</h3>
+				<a href="resume.html"><img src='http://lorempixel.com/500/500/sports/' /></a>
+				<h3>Resume</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis id arcu dignissim placerat. Nam condimentum ipsum sit amet urna sagittis viverra et laoreet dolor. Aenean luctus sodales est eget bibendum. Sed varius aliquet efficitur. Duis lobortis sem ac sem viverra, eu efficitur lacus molestie. Donec varius lorem diam, quis varius tortor blandit non. In eget hendrerit nibh. Phasellus sed dapibus neque, vel posuere diam. Duis quis justo et metus vestibulum bibendum vel in est. Sed sodales eget ligula sit amet consequat.</p>
-				<a href="history.html" class="btn">Read more</a>
+				<a href="resume.html" class="btn">Read more</a>
 			</div>
 
 			<div>
@@ -78,10 +78,10 @@
 			</div>
 
 			<div>
-				<a href=""><img src='http://lorempixel.com/500/500/cats/' /></a>
+				<a href="projects.html"><img src='http://lorempixel.com/500/500/cats/' /></a>
 				<h3>Projects</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis id arcu dignissim placerat. Nam condimentum ipsum sit amet urna sagittis viverra et laoreet dolor. Aenean luctus sodales est eget bibendum. Sed varius aliquet efficitur. Duis lobortis sem ac sem viverra, eu efficitur lacus molestie. Donec varius lorem diam, quis varius tortor blandit non. In eget hendrerit nibh. Phasellus sed dapibus neque, vel posuere diam. Duis quis justo et metus vestibulum bibendum vel in est. Sed sodales eget ligula sit amet consequat.</p>
-				<a href="" class="btn">Read more</a>
+				<a href="projects.html" class="btn">Read more</a>
 			</div>
 
 			<div>
@@ -96,91 +96,7 @@
 
 </body>
 
-<script>
+<script src="scripts.js" ></script>
 
-	document.addEventListener("click", function(event){
-		var el = event.target;
-
-		if ( el.classList.contains("more") ) {
-			var sibling = el.nextElementSibling;
-			if (sibling.className == "hide"){
-				el.classList.add("active");
-				sibling.className = "show";
-			} else {
-				sibling.className = "hide";
-				el.classList.remove("active");
-			}
-			
-		}
-	});
-
-	window.addEventListener("load", function load(event){
-		window.removeEventListener("load", load, false); //remove listener, no longer needed
-		timer.init();  
-	},false);
-
-	var timer = {
-		init: function() {
-			var timer = document.getElementById('timer');
-			var startDate = new Date(2013,9,7).getTime(); // month starts at 0 for some reason, while everything else starts at 1
-			var currentDate = Date.now();
-			var dateDifference = Math.round((currentDate - startDate) / 86400000); // 86400000 = one day
-			var workingHours = Math.round((dateDifference + 220)/7*5*0.91*24/7.5); // 220 is my placement year, /7*5 substracts weekends, 0.91 substracts ~30 days holidays, *24/7.5 gets number of working hours in a day
-
-			timer.textContent = workingHours + ' hours';
-		}
-	};
-
-	
-// Event.observe(document,'click',function(event){
-// 	var el = $(event.target);
-
-// 	if ( el.hasClassName('open') || el.up('.open') ) {
-// 		var body = $$('body')[0];
-// 		if ( body.hasClassName('nav-open') ) {
-// 			body.removeClassName('nav-open');
-// 		} else {
-// 			body.addClassName('nav-open');
-// 		}
-// 	}
-// 	if ( el.hasClassName('close') || el.up('.close') ) {
-// 		var body = $$('body')[0];
-// 		if ( body.hasClassName('nav-open') ) {
-// 			body.removeClassName('nav-open');
-// 		}
-// 	}
-
-// 	if (el.hasClassName('scroll-top')) {
-// 		document.body.scrollTop = document.documentElement.scrollTop = 0;
-// 	}
-// });
-
-// Event.observe(document,'scroll',function(event){
-// 	var doc = document.documentElement;
-// 	var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-
-// 	if ( top > 100 ) {
-// 		$$('header')[0].addClassName('scrolled');
-// 	} else {
-// 		$$('header')[0].removeClassName('scrolled');
-// 	}
-	
-// });
-
-
-// document.addEventListener( 'DOMContentLoaded', function () {	
-// 	if ( $('page').getHeight() < ( document.viewport.getHeight() - $('footer').getHeight() ) ) {
-// 		$$('header')[0].addClassName('scrolled');
-// 	}	
-// });
-
-// Event.observe(window,'resize',function(event){
-// 	if ( $$('body')[0].hasClassName('nav-open')) {
-// 		$$('body')[0].removeClassName('nav-open');
-// 	}
-// });
-
-
-</script>
 
 </html>
