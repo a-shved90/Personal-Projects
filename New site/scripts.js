@@ -3,24 +3,33 @@
 document.addEventListener("click", function(event){
 	var el = event.target;
 
-	if ( el.classList.contains("more") ) {
-		var sibling = el.nextElementSibling;
-		if (sibling.className == "hide"){
-			el.classList.add("active");
-			sibling.className = "show";
+	if ( el.classList.contains("more") ) { // will need to be changed to cases rather than ifs
+		var parent = el.parentElement;
+		var more = parent.getElementsByClassName("more");
+		if (el.classList.contains("active")){
+			parent.getElementsByClassName("show")[0].className = "hide";
+			for(i = 0; i < more.length; i++) {
+				more[i].classList.remove("active");
+				if (more[i].tagName == 'A'){
+					more[i].textContent = 'Read more';
+				}
+			}
 		} else {
-			sibling.className = "hide";
-			el.classList.remove("active");
+			parent.getElementsByClassName("hide")[0].className = "show";
+			for(i = 0; i < more.length; i++) {
+				more[i].classList.add("active");
+				if (more[i].tagName == 'A'){
+					more[i].textContent = 'Read less';
+				}
+			}
 		}
-		
 	}
-
 
 });
 
 window.addEventListener("load", function load(event){
-	if (document.getElementById('timer') > 0){
-		workCounter.init();  
+	if (document.getElementById('timer') != null){
+		workCounter.init();
 	}
 	window.removeEventListener("load", load, false);
 },false);

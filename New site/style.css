@@ -26,7 +26,8 @@ h1, h2, h3, h4, h5, h6{
 
 a.text-link{
 	position: relative;
-	padding-left: 25px;
+	padding-left: 17px;
+	margin-left: 5px;
 	display: inline-block;
 	box-sizing: border-box;
 	color: #000;
@@ -41,9 +42,9 @@ a.text-link:before{
 	background-color: #000;
 	-webkit-mask-image: url(images/link.svg);
 	mask-image: url(images/link.svg);
-	-webkit-mask-size: 20px 20px;
-	width: 20px;
-	height: 20px;
+	-webkit-mask-size: 15px 15px;
+	width: 15px;
+	height: 15px;
 	display: block;
 	-webkit-transition: all 400ms 0s ease-in-out;
 	transition: all 400ms 0s ease-in-out;
@@ -66,6 +67,7 @@ a.btn{
 	border: 1px solid red;
 	color: #fff;
 	background: red;
+	text-decoration: none;
 }
 
 a.btn:hover{
@@ -90,15 +92,17 @@ header, main, footer{
 
 header nav{
 	vertical-align: top;
-	display: inline-block;
-	float: right;
+	display: block;
+	text-align: center;
 	margin: 0.65em auto 0;
 }
 
 header nav a{
 	display: inline-block;
-	padding: 0.6em;
-	background: #fff;
+	padding: 0.72em 0.85em 0.7em;
+	margin-bottom: 5px;
+	color: #1a1a1a;
+	background: #efefef;
 }
 
 header nav a:link, header nav a:visited {
@@ -108,6 +112,9 @@ header nav a:link, header nav a:visited {
 
 header nav a:link:hover, header nav a:visited:hover {
 	color: black;
+	padding-bottom: 0.4em;
+	border-bottom: 5px solid #e6e6e6;
+	transition: none;
 }
 
 .title-author{
@@ -127,15 +134,7 @@ main{
 	margin: 0 auto;
 }
 
-.section-list:after{
-	content: "";
-	display: table;
-	clear: both;
-}
-
 .section-list div{
-	float: left;
-	vertical-align: top;
 	width: 100%;
 	color: #000;
 	margin-bottom: 2.5em;
@@ -180,7 +179,9 @@ main{
 }
 
 .resume section article{
-	padding-left: 240px;
+	margin: 0 0 40px 240px;
+	padding-bottom: 25px;
+	border-bottom: 1px dashed #afafaf;
 }
 
 .resume section article header{
@@ -191,35 +192,40 @@ main{
 
 .resume section article .job-head{
 	float: left;
+	width: 50%;
+}
+
+.resume section article .job-head h3{
+	margin-bottom: 0;
+}
+
+.resume section article .job-head p{
+	font-weight: 600;
 }
 
 .resume section article .logo{
 	float: right;
+	width: 30%;
 }
 
-.resume section article .more{
-	position: relative;
-	padding-right: 50px;
+.resume section article .logo img{
+	width: 100%;
 }
 
-.resume section article .more:after{
-	content: "\25BC";
-	position: absolute;
-	right: 0;
-	top: 0;
+.resume section article a.more{
 	display: block;
-	width: 20px;
-	height: 20px;
-	color: #000;
-	line-height: 20px;
-	font-size: 30px;
-	padding: 6px 5px 3px 7px;
-	border-radius: 5px;
+	text-decoration: none;
+	margin: 0 0 1.5em 0;
+	color: #1a1a1a;
+	font-size: 1.3em;
 }
 
-.resume section article .more.active:after{
-	content: "\25B2";
-	padding: 7px 5px 2px 7px;
+.resume section article a.more:hover{
+	text-decoration: underline;
+}
+
+.resume section article p.more{
+	cursor: pointer;
 }
 
 .resume section article div{
@@ -234,39 +240,206 @@ main{
 	max-height: 500px;
 }
 
+/* SKILLA PAGE */
+
+.skills-list{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.skills-list article{
+	padding: 20px;
+}
+
+.skills-list article img{
+	display: block;	
+	max-height: 70px;
+	margin-bottom: 0.8em;
+}
+
+.skills-list article p{
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.skills-list article.html{
+	background: #E44D26;
+}
+
+.skills-list article.css{
+	background: #1572B6;
+}
+
+.skills-list article.javascript{
+	background: #fdd83c;
+}
+
+.skills-list article.javascript p{
+	color: #1a1a1a;
+}
+
+.skills-list article.sass{
+	background: #cd669a;
+}
+
+.skills-list article.json{
+	background: #2B2B2B;
+}
+
+.skills-list article.responsive{
+	background: #268A26;
+}
+
+.skills-list article.git{
+	background: #4e443c;
+}
+
+.skills-list article.git p{
+	color: #fff;
+}
+
+/* PORTFOLIO PAGE */
+
+.portfolio article{
+	margin-bottom: 1.25em;
+}
+
+.portfolio article .image{
+	display: block;
+}
+
+.portfolio article .image img{
+	display: block;
+	width: 100%;
+}
+
+.portfolio article .image div{
+	display: none;
+}
+
 @media all and (min-width: 768px){
 	body{
-		padding: 0 40px;
+		padding: 0 2.5em;
 	}
-	.section-list div{
+	header nav{
+		display: inline-block;
+		float: right;
+	}
+	.section-list:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.section-list div, .skills-list article{ /* consider redoing with flexbox instead */
+		float: left;
 		width: 46%;
-		width: calc((100% - 40px) / 2);
+		width: calc((100% - 2.5em) / 2);
 	}
-	.section-list div:first-of-type{
-		margin-right: 40px;
+	.skills-list article{
+		margin-bottom: 2.5em;
+	}
+	.skills-list article p{ /* quick hack, will likely need JS for equal article height */
+		height: 140px;
+	}
+	
+	.section-list div:first-of-type, .skills-list article:nth-of-type(odd){
+		margin-right: 2.5em;
 	}
 	.section-list div:last-of-type{
-		margin-left: 40px;
+		margin-left: 2.5em;
+	}
+	.portfolio article{
+		margin-bottom: 2.5em;
 	}
 }
 
 @media all and (min-width: 1024px){
 	.section-list div{
 		width: 20%;
-		width: calc((100% - 160px) / 4);
-		margin: 0 20px;
+		width: calc((100% - 10em) / 4);
+		margin: 0 1.25em;
 	}
 	.section-list div:first-of-type{
-		margin-right: 20px;
+		margin-right: 1.25em;
 	}
 	.section-list div:last-of-type{
-		margin-left: 20px;
+		margin-left: 1.25em;
+	}
+	.skills-list article{
+		width: 28%;
+		width: calc((100% - 7.5em) / 3);
+		margin: 0 2.5em 2.5em 0;
+	}
+	.skills-list article:nth-of-type(3n+3){
+		margin-right: 0;
+	}
+
+	.portfolio article{
+		position: relative;
+		margin-bottom: 3.75em;
+	}
+	.portfolio article:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.portfolio article .image, .portfolio article .content{
+		width: calc(50% - 1.25em);
+	}
+	.portfolio article .image{
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		overflow: hidden;
+	}
+	.portfolio article .image img{
+		display: none;
+	}
+	.portfolio article .image div{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.portfolio article .image div{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.portfolio article .content{
+		float: right;
+	}
+
+	.portfolio article:nth-child(even) .image{
+		left: auto;
+		right: 0;
+	}
+
+	.portfolio article:nth-child(even) .content{
+		float: left;
 	}
 }
 
 @media all and (min-width: 1280px){
 	body{
 		padding: 0 100px;
+	}
+	.portfolio article{
+		position: relative;
+		margin-bottom: 5em;
 	}
 }
 
