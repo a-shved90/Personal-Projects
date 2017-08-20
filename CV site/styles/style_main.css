@@ -231,19 +231,19 @@ a:hover{
 	right: -50px;
 	top: 0;
 	display: block;
-	width: 20px;
+	width: 23px;
 	height: 20px;
 	color: #fff;
 	background: #383B3C;
 	line-height: 20px;
-	font-size: 30px;
-	padding: 6px 5px 3px 7px;
+	font-size: 25px;
+	padding: 6px 5px 4px 3px;
 	border-radius: 5px;
 }
 
 .more.active::after{
 	content: "\25B2";
-	padding: 7px 5px 2px 7px;
+	padding: 7px 5px 3px 3px;
 }
 
 .hide, .show{
