@@ -2,9 +2,9 @@
   <section class="job">
     <div class="job__infoWrapper">
       <h3 class="job__company">
-        <a :href="job.link" class="job_link link" target="_blank">{{
-          job.company
-        }}</a>
+        <a :href="job.link" class="job_link link" target="_blank">
+          {{ job.company }}
+        </a>
       </h3>
       <p class="job__location">{{ job.location }}</p>
     </div>
@@ -20,7 +20,16 @@
     >
       <p class="short" @click="toggleDesc()">{{ item.short }}</p>
       <transition-accordion>
-        <p v-show="isOpen" class="long">{{ item.long }}</p>
+        <div
+          class="p"
+          v-show="isOpen"
+          v-if="Array.isArray(item.long) && item.long.length > 1"
+        >
+          <template v-for="text in item.long">
+            <p v-html="text" :key="text.id"></p>
+          </template>
+        </div>
+        <p class="long" v-html="item.long" v-else v-show="isOpen"></p>
       </transition-accordion>
       <p v-if="item.long" class="more" @click="toggleDesc()">Read more</p>
     </div>
@@ -74,6 +83,7 @@ $theme: $orange;
 
   &__infoWrapper {
     display: block;
+    margin-bottom: 5px;
 
     h3,
     h4,
@@ -88,13 +98,9 @@ $theme: $orange;
     display: inline-block;
   }
 
-  &__company {
-    padding-bottom: 5px;
-  }
-
-  &__location,
-  &__period {
-    padding-left: 20px;
+  &__company,
+  &__role {
+    padding-right: 20px;
   }
 
   &__location {

@@ -24,7 +24,6 @@ export default {
     }
   }
 };
-//console.log(data.jobs[3].description[0].long.length);
 </script>
 
 <style lang="scss">

@@ -74,10 +74,10 @@ $navNum: 4;
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: $navBg;
 
   &.active {
     top: 0;
+    background-color: $navBg;
 
     a:nth-child(4) {
       bottom: (100% / 4) * 0;

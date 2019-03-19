@@ -1,193 +1,196 @@
 {
-    "name": "Alexander Shved",
-    "jobs": [
+  "name": "Alexander Shved",
+  "jobs": [
+    {
+      "company": "fresh8Gaming (Connected Ventures)",
+      "link": "http://fresh8gaming.com/",
+      "logo": "logo",
+      "location": "Bristol",
+      "period": "November 2017 - Present",
+      "role": "Front End Engineer",
+      "description": [
         {
-            "company": "fresh8Gaming (Connected Ventures)",
-            "link": "http://fresh8gaming.com/",
-            "logo": "logo",
-            "location": "Bristol",
-            "period": "November 2017 - Present",
-            "role": "Front End Engineer",
-            "description": [
-                {
-                    "short": "A feature-rich role with many technologies across many levels. Vue based development, setting up docker servers, running bash scripts for SQL migrations, to building custom Vue component library.",
-                    "long": "I work with client team on a wide range of technologies to deliver innovative and flexible solutions to clients in gambling sector. I am responsible for development of widgets across wide selection of technologies and services, from visual side of things to functionality, frequently moving between FE and BE in order to set everything up and populate correctly, touching up on both SCSS and SQL, not shying away from bash scripts, using Invision, most of development is done using Vue and custom built Vue based platform"
-                }
-            ]
-        },
-        {
-            "company": "Element78 Solutions",
-            "link": "https://www.element78.co.uk/",
-            "logo": "logo",
-            "location": "Bristol",
-            "period": "March 2016 - May 2017",
-            "role": "Middleweight Web Developer",
-            "description": [
-                {
-                    "short": "A mid-weight developer position in a well established full service digital agency with a goal to train and grow to a senior web developer and team lead role in the near future.",
-                    "long": "I work closely with Frontend and Backend teams to evaluate and improve current development cycle, research and present new technologies to the office to further optimize the development process and bring both teams closer together for a tighter collaboration and seamless integration of their work. Of course I still have a hand in front end web development, fleshing out designs and building a pleasant browsing experience across all media and devices, to a high code standard and with accessibility in mind. A broad selection of tools are used on a daily basis, Visual studio and Sublime are the IDEs of choice for our developers, TFS for version control and LESS/Handlebars mixture for quick and efficient BEM prototyping before merging a website with Umbraco/Sitecore functionality."
-                }
-            ]
-        },
-        {
-            "company": "Deep Blue Sky",
-            "link": "https://deepbluesky.com/",
-            "logo": "logo",
-            "location": "Bath Spa",
-            "period": "July 2015 - March 2016",
-            "role": "Front End Web Developer",
-            "description": [
-                {
-                    "short": "Amazing place to work at, utmost attention to detail, great relationship with clients, full support from back end developers and always great care to deliver a website that everyone in the office can be proud to put their name on.",
-                    "long": "My responsibilities include a full front end package – HTML, CSS (SASS) and JS (Vanilla, Jquery, Prototype),integrating designs into a PHP based back end system called Spirit, I interact with PHP on a regular basis and while I don’t write any from scratch I frequently interact with existing scripts, copying and editing when necessary, sometimes creating entire modules from existing pieces. After finalizing the project brief with the client, our UX designers build a framework that Digital Designers flesh out and create a full design from, including an asset sheet and interaction patterns, and sometimes reusable blocks too. Then Front end developers take it apart and build a fully responsive, cross browser tested, interactive and animated site. At the same time PHP developers build new modules for our bespoke CMS and prepare additional functionality for the site if required, ready to be merged with front end. After Spirit and front end code is merged and turned into a fully functional site UX and UI designers go over the whole process and make sure it flows just as intended, if not – additional revisions are added and the whole site is tweaked to be the best it can be. Versioning is done with Git and Codebase, most of which is managed through terminal, including SASS compiler and branch hierarchy."
-                }
-            ]
-        },
-        {
-            "company": "Code Change",
-            "link": "https://www.codechange.co.uk/",
-            "logo": "logo",
-            "location": "Bradford-on-Avon",
-            "period": "October 2013 - July 2015",
-            "role": "Junior Front End Web Developer",
-            "description": [
-                {
-                    "short": "Management and maintenance of existing websites and completed projects. Front end development of new projects based on bespoke .NET shopping platforms",
-                    "long": [
-                        "CodeChange specialized in bespoke .NET Ecommerce and Elearning platforms. After client gathering requirements they are customized in accordance with the clients needs.",
-                        "Then or during this process a design was being established and passed on to front end team to be built on top of said platforms.",
-                        "My work involved the front end side of the process – turning a design into fully functional website, building on top of .NET functionality using partial views and master pages and linking all the functionality and generated data to the right places on design and making it interactive if needed.",
-                        "I was responsible for my own workload and time management, as well as negotiations with projects client during build and after submission, and passing the project on to another developer.",
-                        "Key technologies used were HTML, CSS and JS, focusing mainly on the first two, replacing any JS possible with CSS animations, checklist toggle nav menu would be an example. All the code was managed via Github versioning between all developers involved.",
-                        "JS and Jquery involved heavy use of third party plugins for sliders, slider zoom, fancyboxes, drop downs, browser caching, cookies etc."
-                    ]
-                }
-            ]
-        },
-        {
-            "company": "Saatchi & Saatchi Health",
-            "link": "http://saatchi.co.uk/en-gb/",
-            "logo": "logo",
-            "location": "Manchester",
-            "period": "September 2011 - August 2012",
-            "role": "Trainee Web Developer",
-            "description": [
-                {
-                    "short": "Duties inlude HTML/CSS/JS website development according to designs supplied by in-house designer. Completed work was then uploaded and synced to TortoiseSVN and passed on to senior developers for review. Extra work consisted of CMS management.",
-                    "long": ""
-                }
-            ]
+          "short": "A feature-rich role with many technologies across many levels. Vue based development, setting up docker servers, running bash scripts for SQL migrations, to building custom Vue component library.",
+          "long": "I work with client team on a wide range of technologies to deliver innovative and flexible solutions to clients in gambling sector. I am responsible for development of widgets across wide selection of technologies and services, from visual side of things to functionality, frequently moving between FE and BE in order to set everything up and populate correctly, touching up on both SCSS and SQL, not shying away from bash scripts, using Invision, most of development is done using Vue and custom built Vue based platform"
         }
-    ],
-    "skills": [
+      ]
+    },
+    {
+      "company": "Element78 Solutions",
+      "link": "https://www.element78.co.uk/",
+      "logo": "logo",
+      "location": "Bristol",
+      "period": "March 2016 - May 2017",
+      "role": "Middleweight Web Developer",
+      "description": [
         {
-            "name": "HTML5",
-            "logo": "logo",
-            "description": "I write clean semantic markup, and currently undergoing a crisis of minimalist vs OOP approach."
-        },
-        {
-            "name": "CSS3 + SASS",
-            "logo": "logo",
-            "description": "My CSS3 includes anything and everything it can get a hold of, if it can be made in CSS - it will be, in a clean, minimalistic and consistent fashion. Unless JS is more appropriate of course."
-        },
-        {
-            "name": "Device and Browser agnostic",
-            "logo": "logo",
-            "description": "With mobile-first approach, I write fully responsive code, tested across multiple platforms before release."
-        },
-        {
-            "name": "WAI & a11y accessibile",
-            "logo": "logo",
-            "description": "My websites cater to various user disabilities, and ease of access through all kinds of media."
-        },
-        {
-            "name": "JS (ES6+)",
-            "logo": "logo",
-            "description": "Thoroughly linted, clear and easily reausable OOP approach."
-        },
-        {
-            "name": "Vue/Vuex",
-            "logo": "logo",
-            "description": "I picked up Vue over a year ago thanks to my last workplace. A huge timesaver."
-        },
-        {
-            "name": "React/Redux",
-            "logo": "logo",
-            "description": "I experimented with react back when it was still new, as a small side project."
-        },
-        {
-            "name": "SQL/Postgress",
-            "logo": "logo",
-            "description": "I've done a bit of SQL data management and shuffling tables around via node scripts."
-        },
-        {
-            "name": ".NET, C#, Umbraco",
-            "logo": "logo",
-            "description": "By no means profficient, I've done minor MVC and back end work during my time with E78"
-        },
-        {
-            "name": "PHP and Wordpress",
-            "logo": "logo",
-            "description": "I have done a few tickets and freelance contracts on Wordpress, nothing major, but enough to get the basics right."
-        },
-        {
-            "name": "Git",
-            "logo": "logo",
-            "descirption": "Git is my primary SVN of choice, either via github or gitbash or regular terminal."
+          "short": "A mid-weight developer position in a well established full service digital agency with a goal to train and grow to a senior web developer and team lead role in the near future.",
+          "long": "I work closely with Frontend and Backend teams to evaluate and improve current development cycle, research and present new technologies to the office to further optimize the development process and bring both teams closer together for a tighter collaboration and seamless integration of their work. Of course I still have a hand in front end web development, fleshing out designs and building a pleasant browsing experience across all media and devices, to a high code standard and with accessibility in mind. A broad selection of tools are used on a daily basis, Visual studio and Sublime are the IDEs of choice for our developers, TFS for version control and LESS/Handlebars mixture for quick and efficient BEM prototyping before merging a website with Umbraco/Sitecore functionality."
         }
-
-    ],
-    "education": [
+      ]
+    },
+    {
+      "company": "Deep Blue Sky",
+      "link": "https://deepbluesky.com/",
+      "logo": "logo",
+      "location": "Bath Spa",
+      "period": "July 2015 - March 2016",
+      "role": "Front End Web Developer",
+      "description": [
         {
-            "institution": "Gloucestershire University",
-            "link": "http://www.glos.ac.uk",
-            "logo": "logo",
-            "location": "Cheltenham",
-            "period": "2009 - 2013",
-            "degree": "Bachelor of Technology (2.1 Honours)",
-            "modules": [
-                "Cisco networking",
-                "Website development",
-                "Web design",
-                "Database design",
-                "Java development"
-            ],
-            "description": "Dissertation Topic of choice: How current Web Technologies allow SMEs to compete with larger competitors in the context of mobile content delivery and service provision"
-        },
-        {
-            "institution": "Bournemouth & Poole College",
-            "link": "https://www.thecollege.co.uk/",
-            "logo": "logo",
-            "location": "Bournemouth",
-            "period": "2006 - 2009",
-            "degree": "NVQ Lv2 and BTEC Lv3 in IT",
-            "modules": "",
-            "description": "Double Distinction graduation award in such course modules as Web Design and Development, Database Management, and E-Commerce."
+          "short": "Amazing place to work at, utmost attention to detail, great relationship with clients, full support from back end developers and always great care to deliver a website that everyone in the office can be proud to put their name on.",
+          "long": [
+            "My responsibilities include a full front end package – HTML, CSS (SASS) and JS (Vanilla, Jquery, Prototype),integrating designs into a PHP based back end system called Spirit, I interact with PHP on a regular basis and while I don’t write any from scratch I frequently interact with existing scripts, copying and editing when necessary, sometimes creating entire modules from existing pieces. After finalizing the project brief with the client, our UX designers build a framework that Digital Designers flesh out and create a full design from, including an asset sheet and interaction patterns, and sometimes reusable blocks too.",
+            "Then Front end developers take it apart and build a fully responsive, cross browser tested, interactive and animated site. At the same time PHP developers build new modules for our bespoke CMS and prepare additional functionality for the site if required, ready to be merged with front end. After Spirit and front end code is merged and turned into a fully functional site UX and UI designers go over the whole process and make sure it flows just as intended, if not – additional revisions are added and the whole site is tweaked to be the best it can be.",
+            "Versioning is done with Git and Codebase, most of which is managed through terminal, including SASS compiler and branch hierarchy."
+          ]
         }
-    ],
-    "projects": [
+      ]
+    },
+    {
+      "company": "Code Change",
+      "link": "https://www.codechange.co.uk/",
+      "logo": "logo",
+      "location": "Bradford-on-Avon",
+      "period": "October 2013 - July 2015",
+      "role": "Junior Front End Web Developer",
+      "description": [
         {
-            "title": "SVG Moscow metro map",
-            "description": "Heavily inspired by <a href=\"http://www.csstubemap.co.uk/\" target=\"_blank\">csstubemap</a>, I thought that yes, HTML/CSS map is great idea, but on paper its completely unmanageable and unusable if you want to add any kind of data manipulation, sorting, shortest-path algorithms etc. After some research the only reasonable solution was SVG - a clean, clear, and elegant way of keeping the map maintainable without the hassle, its SEO friendly, its compliant with any standards, and its fully accessible to JS in a semantic and meaningful way, so data manipulation will be much more accessible and enjoyable task. I'm specifically interested in implementing <a href=\"https://en.wikipedia.org/wiki/A*_search_algorithm\" target=\"_blank\">A* search algorithm</a>"
-        },
-        {
-            "title": "webGL 3D model manipulation",
-            "description": [
-                "Apparently I have a surprising passion for browser games done right. Most of browser games you see today are flash based, and anything even remotely close to webGL and HTML5 Canvas implementation is either nonexistent or done poorly and can barely be called a game. There are a few pleasant exception though, <a href=\"https://playcanvas.com/\" target=\"_blank\">Play Canvas</a> and <a href=\"http://www.littleworkshop.fr/\" target=\"_blank\">Little workshop</a> being the most notable ones.",
-                "I am exceedingly curious to play with this tech myself and see what I can do with this, how far can this be pushed, and even though JS is not an ideal language for expansive browser games - maybe a city management genre would fit it the best. So playing with a house model, setup its building order, 3D view and manipulation, hide/show individual elements etc. and maybe someday push it further than a single model."
-            ]
-        },
-        {
-            "title": "Pure CSS dynamic city",
-            "description": "Heavily inspired by <a href=\"http://codepen.io/stepan/pen/dfjDL\" target=\"_blank\">Tiny city</a>, and as a healthy (but very unmanageable) alternative to webGL, this seems like a curious thing to try - create a few buildings, preset conditions and flexible variables, and generate a city based on set parameters. Yes its fairly basic, but how amazing would be it to create an always unique HTML/CSS city with a press of a button!"
-        },
-        {
-            "title": "Recreate Pillars of Eternity dialogue tree",
-            "description": "A while back I've read very thought provoking article <a href=\"https://medium.com/swlh/designing-musical-user-interfaces-4f30b41d7a83\" target=\"_blank\">Designing Musical User Interfaces</a>, I am not a designer, but it made me wonder when was the last time I used an audio file in my web development? In fact, was there even a first time? It seems baffling that such an obvious stimulus as sound is being completely ignored and even shunned in web development world. So I thought it would be an interesting experiment to combine a favourite characters dialogue - text and audio and interactions - with web development and audio files for an immersive experience. This will give me plenty of room to experiment with audio formats, and sound integration into a website."
-        },
-        {
-            "title": "D3js family tree",
-            "description": "Recently I have dabbled with <a href=\"https://d3js.org/\" target=\"_blank\">D3js</a>, an amazing and very powerful library for data manipulation. A complex tool that gives huge control over data formatting, outputting and shaping it in any way imaginable. This coincided with my personal curiosity for my family tree and finding lost relatives - there turned out to be a whole lot of them. The best way to visualise them all, keep a record, and present all the research and work done to all of them is a tree diagram. A very familiar and widely accepted genealogy depiction tool, and with proper formatting and rich data it can be a gorgeous and impressive data showcase."
+          "short": "Management and maintenance of existing websites and completed projects. Front end development of new projects based on bespoke .NET shopping platforms",
+          "long": [
+            "CodeChange specialized in bespoke .NET Ecommerce and Elearning platforms. After client gathering requirements they are customized in accordance with the clients needs.",
+            "Then or during this process a design was being established and passed on to front end team to be built on top of said platforms.",
+            "My work involved the front end side of the process – turning a design into fully functional website, building on top of .NET functionality using partial views and master pages and linking all the functionality and generated data to the right places on design and making it interactive if needed.",
+            "I was responsible for my own workload and time management, as well as negotiations with projects client during build and after submission, and passing the project on to another developer.",
+            "Key technologies used were HTML, CSS and JS, focusing mainly on the first two, replacing any JS possible with CSS animations, checklist toggle nav menu would be an example. All the code was managed via Github versioning between all developers involved.",
+            "JS and Jquery involved heavy use of third party plugins for sliders, slider zoom, fancyboxes, drop downs, browser caching, cookies etc."
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "company": "Saatchi & Saatchi Health",
+      "link": "http://saatchi.co.uk/en-gb/",
+      "logo": "logo",
+      "location": "Manchester",
+      "period": "September 2011 - August 2012",
+      "role": "Trainee Web Developer",
+      "description": [
+        {
+          "short": "Duties inlude HTML/CSS/JS website development according to designs supplied by in-house designer. Completed work was then uploaded and synced to TortoiseSVN and passed on to senior developers for review. Extra work consisted of CMS management.",
+          "long": ""
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML5",
+      "logo": "logo",
+      "description": "I write clean semantic markup, and currently undergoing a crisis of minimalist vs OOP approach."
+    },
+    {
+      "name": "CSS3 + SASS",
+      "logo": "logo",
+      "description": "My CSS3 includes anything and everything it can get a hold of, if it can be made in CSS - it will be, in a clean, minimalistic and consistent fashion. Unless JS is more appropriate of course."
+    },
+    {
+      "name": "Device and Browser agnostic",
+      "logo": "logo",
+      "description": "With mobile-first approach, I write fully responsive code, tested across multiple platforms before release."
+    },
+    {
+      "name": "WAI & a11y accessibile",
+      "logo": "logo",
+      "description": "My websites cater to various user disabilities, and ease of access through all kinds of media."
+    },
+    {
+      "name": "JS (ES6+)",
+      "logo": "logo",
+      "description": "Thoroughly linted, clear and easily reausable OOP approach."
+    },
+    {
+      "name": "Vue/Vuex",
+      "logo": "logo",
+      "description": "I picked up Vue over a year ago thanks to my last workplace. A huge timesaver."
+    },
+    {
+      "name": "React/Redux",
+      "logo": "logo",
+      "description": "I experimented with react back when it was still new, as a small side project."
+    },
+    {
+      "name": "SQL/Postgress",
+      "logo": "logo",
+      "description": "I've done a bit of SQL data management and shuffling tables around via node scripts."
+    },
+    {
+      "name": ".NET, C#, Umbraco",
+      "logo": "logo",
+      "description": "By no means profficient, I've done minor MVC and back end work during my time with E78"
+    },
+    {
+      "name": "PHP and Wordpress",
+      "logo": "logo",
+      "description": "I have done a few tickets and freelance contracts on Wordpress, nothing major, but enough to get the basics right."
+    },
+    {
+      "name": "Git",
+      "logo": "logo",
+      "description": "Git is my primary SVN of choice, either via github or gitbash or regular terminal."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Gloucestershire University",
+      "link": "http://www.glos.ac.uk",
+      "logo": "logo",
+      "location": "Cheltenham",
+      "period": "2009 - 2013",
+      "degree": "Bachelor of Technology (2.1 Honours)",
+      "modules": [
+        "Cisco networking",
+        "Website development",
+        "Web design",
+        "Database design",
+        "Java development"
+      ],
+      "description": "Dissertation Topic of choice: How current Web Technologies allow SMEs to compete with larger competitors in the context of mobile content delivery and service provision"
+    },
+    {
+      "institution": "Bournemouth & Poole College",
+      "link": "https://www.thecollege.co.uk/",
+      "logo": "logo",
+      "location": "Bournemouth",
+      "period": "2006 - 2009",
+      "degree": "NVQ Lv2 and BTEC Lv3 in IT",
+      "modules": "",
+      "description": "Double Distinction graduation award in such course modules as Web Design and Development, Database Management, and E-Commerce."
+    }
+  ],
+  "projects": [
+    {
+      "title": "SVG Moscow metro map",
+      "description": "Heavily inspired by <a href=\"https://web.archive.org/web/20171121043855/http://www.csstubemap.co.uk/\" target=\"_blank\">csstubemap</a>, I thought that yes, HTML/CSS map is great idea, but on paper its completely unmanageable and unusable if you want to add any kind of data manipulation, sorting, shortest-path algorithms etc. After some research the only reasonable solution was SVG - a clean, clear, and elegant way of keeping the map maintainable without the hassle, its SEO friendly, its compliant with any standards, and its fully accessible to JS in a semantic and meaningful way, so data manipulation will be much more accessible and enjoyable task. I'm specifically interested in implementing <a href=\"https://en.wikipedia.org/wiki/A*_search_algorithm\" target=\"_blank\">A* search algorithm</a>"
+    },
+    {
+      "title": "webGL 3D model manipulation",
+      "description": [
+        "Apparently I have a surprising passion for browser games done right. Most of browser games you see today are flash based, and anything even remotely close to webGL and HTML5 Canvas implementation is either nonexistent or done poorly and can barely be called a game. There are a few pleasant exception though, <a href=\"https://playcanvas.com/\" target=\"_blank\">Play Canvas</a> and <a href=\"http://www.littleworkshop.fr/\" target=\"_blank\">Little workshop</a> being the most notable ones.",
+        "I am exceedingly curious to play with this tech myself and see what I can do with this, how far can this be pushed, and even though JS is not an ideal language for expansive browser games - maybe a city management genre would fit it the best. So playing with a house model, setup its building order, 3D view and manipulation, hide/show individual elements etc. and maybe someday push it further than a single model."
+      ]
+    },
+    {
+      "title": "Pure CSS dynamic city",
+      "description": "Heavily inspired by <a href=\"http://codepen.io/stepan/pen/dfjDL\" target=\"_blank\">Tiny city</a>, and as a healthy (but very unmanageable) alternative to webGL, this seems like a curious thing to try - create a few buildings, preset conditions and flexible variables, and generate a city based on set parameters. Yes its fairly basic, but how amazing would be it to create an always unique HTML/CSS city with a press of a button!"
+    },
+    {
+      "title": "Recreate Pillars of Eternity dialogue tree",
+      "description": "A while back I've read very thought provoking article <a href=\"https://medium.com/swlh/designing-musical-user-interfaces-4f30b41d7a83\" target=\"_blank\">Designing Musical User Interfaces</a>, I am not a designer, but it made me wonder when was the last time I used an audio file in my web development? In fact, was there even a first time? It seems baffling that such an obvious stimulus as sound is being completely ignored and even shunned in web development world. So I thought it would be an interesting experiment to combine a favourite characters dialogue - text and audio and interactions - with web development and audio files for an immersive experience. This will give me plenty of room to experiment with audio formats, and sound integration into a website."
+    },
+    {
+      "title": "D3js family tree",
+      "description": "Recently I have dabbled with <a href=\"https://d3js.org/\" target=\"_blank\">D3js</a>, an amazing and very powerful library for data manipulation. A complex tool that gives huge control over data formatting, outputting and shaping it in any way imaginable. This coincided with my personal curiosity for my family tree and finding lost relatives - there turned out to be a whole lot of them. The best way to visualise them all, keep a record, and present all the research and work done to all of them is a tree diagram. A very familiar and widely accepted genealogy depiction tool, and with proper formatting and rich data it can be a gorgeous and impressive data showcase."
+    }
+  ]
 }
