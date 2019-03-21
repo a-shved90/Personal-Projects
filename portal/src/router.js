@@ -38,6 +38,12 @@ export default new Router({
         import(/* webpackChunkName: "contact" */ "./views/Contact.vue")
     },
     {
+      path: "/classmates",
+      name: "classmates",
+      component: () =>
+        import(/* webpackChunkName: "classmates" */ "./views/Classmates.vue")
+    },
+    {
       path: "/*",
       name: "404",
       component: () => import(/* webpackChunkName: "404" */ "./views/404.vue")

@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio">
+  <div class="contact">
     <h1>contact me</h1>
     <p>
       currently very wip, meanwhile you can contact me at
