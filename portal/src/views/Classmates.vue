@@ -1,10 +1,13 @@
 <template>
   <div class="classmates">
     <h1>facebook sdk things</h1>
+    <button @click="sortAlphabetical">alphabetical</button>
+    <button @click="sortDate">birthday</button>
+    <input type="text" v-model="search" placeholder="search by name" />
     <div class="classmates__wrapper">
       <div
         class="classmate"
-        v-for="classmate in classmates"
+        v-for="classmate in filterClassmates"
         :key="classmate.id"
       >
         <a
@@ -54,7 +57,8 @@ export default {
   name: "classmates",
   data() {
     return {
-      classmates: classmates.classmates
+      classmates: classmates.classmates,
+      search: ""
     };
   },
   methods: {
@@ -62,6 +66,27 @@ export default {
       if (url) {
         return require("../assets/classmates/" + url + ".jpg");
       }
+    },
+    sortAlphabetical() {
+      function compare(a, b) {
+        if (a.name < b.name) return -1;
+        if (a.name > b.name) return 1;
+        return 0;
+      }
+      return this.classmates.sort(compare);
+    },
+    sortDate() {
+      this.classmates.sort((a, b) => {
+        return new Date(a.birthday) - new Date(b.birthday);
+      });
+      return this.classmates;
+    }
+  },
+  computed: {
+    filterClassmates() {
+      return this.classmates.filter(classmate => {
+        return classmate.name.toLowerCase().match(this.search.toLowerCase());
+      });
     }
   }
 };
@@ -83,7 +108,7 @@ $theme: #4267b2;
   border: 1px solid $theme;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
 
   &__cover {
@@ -95,15 +120,18 @@ $theme: #4267b2;
 
   &__details {
     justify-content: space-evenly;
+    padding: 35px 10px 10px;
   }
 
   &__name {
     color: #365899;
+    margin: 0 0 10px;
   }
 
   &__location,
   &__birthday {
     color: white;
+    margin: 0;
   }
 
   &__profile {
