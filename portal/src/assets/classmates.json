@@ -1,76 +1,80 @@
 {
-    "classmates": [
-        {
-            "id": 100002157118009,
-            "name": "Alexander Shved",
-            "profileImg": "shved",
-            "coverImg": "shvedCover",
-            "location": "Bristol",
-            "country": "United Kingdom",
-            "birthday": "1990-04-15"
-        },
-        {
-            "id": 100002032335722,
-            "name": "Anna Maslovska",
-            "profileImg": "maslovska",
-            "coverImg": "maslovskaCover",
-            "location": "Newmarket",
-            "country": "United Kingdom",
-            "birthday": "1990-06-03"
-        },
-        {
-            "id": 100006603935872,
-            "name": "Alina Mihailova",
-            "profileImg": "mihailova",
-            "coverImg": "",
-            "location": "Jurmala",
-            "country": "Latvia",
-            "birthday": "1990-05-13"
-        },
-        {
-            "id": 100002388686692,
-            "name": "Igor Ignatjev",
-            "profileImg": "ignatjev",
-            "coverImg": "ignatjevCover",
-            "location": "Jurmala",
-            "country": "Latvia",
-            "birthday": "1990-03-16"
-        },
-        {
-            "id": 100001611477098,
-            "name": "Aleksandrs Žukausks",
-            "profileImg": "zhukauskas",
-            "coverImg": "zhukauskasCover",
-            "location": "Jurmala",
-            "country": "Latvia",
-            "birthday": "1990-03-09"
-        },
-        {
-            "id": 100000774046831,
-            "name": "Arthur Petrosyan",
-            "profileImg": "petrosyan",
-            "coverImg": "petrosyanCover",
-            "location": "Riga",
-            "country": "Latvia",
-            "birthday": "1990-02-10"
-        },
-        {
-            "id": 100002010065722,
-            "name": "Adam Tsechoev",
-            "profileImg": "tsechoev",
-            "coverImg": "tsechoevCover",
-            "location": "Jurmala",
-            "country": "Latvia",
-            "birthday": ""
-        },
-        {
-            "id": 100002137956907,
-            "name": "Katya Vikmane",
-            "profileImg": "vikmane",
-            "coverImg": "vikmaneCover",
-            "location": "Riga",
-            "country": "Latvia",
-            "birthday": "1990-10-09"
-        }
-    ]
+  "classmates": [
+    {
+      "id": 100002157118009,
+      "name": "Alexander Shved",
+      "profileImg": "shved",
+      "coverImg": "shvedCover",
+      "location": "Bristol",
+      "country": "United Kingdom",
+      "birthday": "1990-04-15",
+      "social": {
+        "twitter": "https://twitter.com/Shved_90",
+        "vkontakte": "https://vk.com/a.shved90"
+      }
+    },
+    {
+      "id": 100002032335722,
+      "name": "Anna Maslovska",
+      "profileImg": "maslovska",
+      "coverImg": "maslovskaCover",
+      "location": "Newmarket",
+      "country": "United Kingdom",
+      "birthday": "1990-06-03"
+    },
+    {
+      "id": 100006603935872,
+      "name": "Alina Mihailova",
+      "profileImg": "mihailova",
+      "coverImg": "",
+      "location": "Jurmala",
+      "country": "Latvia",
+      "birthday": "1990-05-13"
+    },
+    {
+      "id": 100002388686692,
+      "name": "Igor Ignatjev",
+      "profileImg": "ignatjev",
+      "coverImg": "ignatjevCover",
+      "location": "Jurmala",
+      "country": "Latvia",
+      "birthday": "1990-03-16"
+    },
+    {
+      "id": 100001611477098,
+      "name": "Aleksandrs Žukausks",
+      "profileImg": "zhukauskas",
+      "coverImg": "zhukauskasCover",
+      "location": "Jurmala",
+      "country": "Latvia",
+      "birthday": "1990-03-09"
+    },
+    {
+      "id": 100000774046831,
+      "name": "Arthur Petrosyan",
+      "profileImg": "petrosyan",
+      "coverImg": "petrosyanCover",
+      "location": "Riga",
+      "country": "Latvia",
+      "birthday": "1990-02-10"
+    },
+    {
+      "id": 100002010065722,
+      "name": "Adam Tsechoev",
+      "profileImg": "tsechoev",
+      "coverImg": "tsechoevCover",
+      "location": "Jurmala",
+      "country": "Latvia",
+      "birthday": ""
+    },
+    {
+      "id": 100002137956907,
+      "name": "Katya Vikmane",
+      "profileImg": "vikmane",
+      "coverImg": "vikmaneCover",
+      "location": "Riga",
+      "country": "Latvia",
+      "birthday": "1990-10-09"
+    }
+  ]
 }

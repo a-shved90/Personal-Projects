@@ -1,6 +1,6 @@
 <template>
   <div class="classmates">
-    <h1>facebook sdk things</h1>
+    <h1>List of my actual classmates from LV 1997-2005</h1>
     <button @click="sortAlphabetical">alphabetical</button>
     <button @click="sortDate">birthday</button>
     <input type="text" v-model="search" placeholder="search by name" />
@@ -10,6 +10,7 @@
         v-for="classmate in filterClassmates"
         :key="classmate.id"
       >
+        <!-- classmate can be a user profile component, but since its exclusive to only this page, I decided to leave it -->
         <a
           class="classmate__url"
           :href="'https://www.facebook.com/' + classmate.id"
@@ -36,14 +37,25 @@
           <p v-if="classmate.birthday" class="classmate__birthday">
             {{ classmate.birthday }}
           </p>
-          <div class="social">
+          <div class="classmate__social">
+            <!-- social links can be a component -->
             <a
               class="social__url"
               :href="'https://www.facebook.com/' + classmate.id"
               target="_blank"
               rel="noopener"
-              >fb</a
-            >
+            ></a>
+            <template v-if="classmate.social">
+              <a
+                v-for="(item, key) in classmate.social"
+                class="social__url"
+                :class="key"
+                :href="item"
+                :title="key"
+                target="_blank"
+                rel="noopener"
+              ></a>
+            </template>
           </div>
         </div>
       </div>
@@ -98,7 +110,7 @@ $theme: #4267b2;
 .classmates__wrapper {
   display: grid;
   grid-auto-rows: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 20px;
 }
 
@@ -118,8 +130,22 @@ $theme: #4267b2;
     position: relative;
   }
 
+  &__profile {
+    width: 90px;
+    display: block;
+    border-radius: 50px;
+    border: 2px solid white;
+    z-index: 1;
+    position: absolute;
+    bottom: -30px;
+    right: 30px;
+  }
+
   &__details {
-    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 35px 10px 10px;
   }
 
@@ -134,15 +160,20 @@ $theme: #4267b2;
     margin: 0;
   }
 
-  &__profile {
-    width: 70px;
-    display: block;
-    border-radius: 50px;
-    border: 2px solid white;
-    z-index: 1;
-    position: absolute;
-    bottom: -35px;
-    right: 30px;
+  &__social {
+    display: flex;
+    flex: 1;
+
+    .social__url {
+      align-self: flex-end;
+      width: 30px;
+      height: 30px;
+      background: orange;
+
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+    }
   }
 }
 

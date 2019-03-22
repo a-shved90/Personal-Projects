@@ -1,34 +1,38 @@
-# threecol
+# Portal
 
 ## Project setup
+
 ```
-npm install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-npm run serve
+yarn serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Personal website with all the information I'm happy to make public. From my resume to my portfolio, my immediate contact info and some more things about me, my adventures and who I am.
 
-### Run your tests
-```
-npm run test
-```
+Built using vue framework, this is a single page application. All data is coming from local JSON files.
 
-### Lints and fixes files
-```
-npm run lint
-```
+##TODO:
 
-### Run your unit tests
 ```
-npm run test:unit
-```
+Portfolio component
+  - relevant project pieces and info writeup
+  - images
+Contact form
+Accessibility
+  - expand on semantics with additional accessibility attributes
+Print media querie
+Blog view and components
+  - maybe disqus comment section
+Timeline
+  - gather relevant points of interest
+  - build json
+  - figure out how JS gonna work
+Design cleanup
+  - tighten design pattern
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
