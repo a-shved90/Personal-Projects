@@ -1,9 +1,12 @@
 <template>
   <div class="classmates">
-    <h1>List of my actual classmates from LV 1997-2005</h1>
-    <button @click="sortAlphabetical">alphabetical</button>
-    <button @click="sortDate">birthday</button>
-    <input type="text" v-model="search" placeholder="search by name" />
+    <div class="sort">
+      <h1>List of my actual classmates from LV 1997-2005</h1>
+      <span>Sort by:</span>
+      <button @click="sortAlphabetical">Alphabetical</button>
+      <button @click="sortDate">Birthday</button>
+      <input type="text" v-model="search" placeholder="Search by name" />
+    </div>
     <div class="classmates__wrapper">
       <div
         class="classmate"
@@ -112,6 +115,40 @@ $theme: #4267b2;
   grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 20px;
+}
+
+.classmates .sort {
+  button {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 20px 10px;
+    border: none;
+    background-color: $blue;
+    color: white;
+
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+  input {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    background-color: rgba($blue, 70%);
+
+    &::placeholder {
+      color: white;
+    }
+
+    &:hover {
+      background-color: rgba($blue, 80%);
+    }
+
+    &:focus {
+      background-color: rgba($blue, 90%);
+    }
+  }
 }
 
 .classmate {

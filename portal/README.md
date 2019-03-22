@@ -16,13 +16,14 @@ Personal website with all the information I'm happy to make public. From my resu
 
 Built using vue framework, this is a single page application. All data is coming from local JSON files.
 
-##TODO:
+TODO:
 
 ```
 Portfolio component
   - relevant project pieces and info writeup
   - images
 Contact form
+Tests
 Accessibility
   - expand on semantics with additional accessibility attributes
 Print media querie
