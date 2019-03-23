@@ -110,18 +110,11 @@ export default {
 <style lang="scss">
 $theme: #4267b2;
 
-.classmates__wrapper {
-  display: grid;
-  grid-auto-rows: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 20px;
-}
-
 .classmates .sort {
   button {
     display: inline-block;
     padding: 10px;
-    margin: 0 0 20px 10px;
+    margin-left: 10px;
     border: none;
     background-color: $blue;
     color: white;
@@ -151,6 +144,14 @@ $theme: #4267b2;
   }
 }
 
+.classmates__wrapper {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
 .classmate {
   background: linear-gradient(to bottom right, #ca619c, #dbc084);
   border-radius: 10px;
@@ -169,6 +170,7 @@ $theme: #4267b2;
 
   &__profile {
     width: 90px;
+    height: 90px;
     display: block;
     border-radius: 50px;
     border: 2px solid white;

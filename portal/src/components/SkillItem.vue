@@ -1,6 +1,9 @@
 <template>
   <section class="skill" :class="{ open: isOpen }">
     <p class="skill__name" @click="toggleDesc()">
+      <svg class="icon icon--skill">
+        <use xlink:href="#home" :class="skill.logo"></use>
+      </svg>
       {{ skill.name }}
       <svg class="icon icon--chevron">
         <use xlink:href="#chevron"></use>
@@ -45,7 +48,7 @@ export default {
 
   .skill__name {
     margin: 0;
-    padding: 15px 45px 15px 20px;
+    padding: 15px 45px;
     cursor: pointer;
     position: relative;
   }
@@ -55,14 +58,35 @@ export default {
     padding: 0 20px;
   }
 
-  .icon--chevron {
+  .icon {
+    position: absolute;
+    top: calc(50% - 10px);
     width: 20px;
     height: 20px;
-    position: absolute;
-    right: 15px;
-    top: calc(50% - 10px);
-    use {
-      fill: $orange;
+
+    &--skill {
+      left: 15px;
+
+      .javascript {
+        fill: #dab92d;
+      }
+      .responsive {
+        fill: white;
+      }
+      .accessibility {
+        fill: #186496;
+      }
+      .git {
+        fill: #f05033;
+      }
+    }
+
+    &--chevron {
+      right: 15px;
+
+      use {
+        fill: $orange;
+      }
     }
   }
 

@@ -3,14 +3,23 @@
     <div class="job__infoWrapper">
       <h3 class="job__company">
         <a :href="job.link" class="job_link link" target="_blank">
+          <svg class="icon">
+            <use xlink:href="#town"></use>
+          </svg>
           {{ job.company }}
         </a>
       </h3>
-      <p class="job__location">{{ job.location }}</p>
+      <p class="job__location">
+        {{ job.location }}
+      </p>
     </div>
     <div class="job__infoWrapper">
-      <h4 class="job__role">{{ job.role }}</h4>
-      <p class="job__period">{{ job.period }}</p>
+      <h4 class="job__role">
+        {{ job.role }}
+      </h4>
+      <p class="job__period">
+        {{ job.period }}
+      </p>
     </div>
     <div
       class="job__description"
@@ -81,6 +90,15 @@ $theme: $orange;
   position: relative;
   overflow: hidden;
 
+  .icon {
+    width: 20px;
+    height: 20px;
+
+    use {
+      fill: $theme;
+    }
+  }
+
   &__infoWrapper {
     display: block;
     margin-bottom: 5px;
@@ -101,6 +119,23 @@ $theme: $orange;
   &__company,
   &__role {
     padding-right: 20px;
+  }
+
+  &__company {
+    position: relative;
+    padding-left: 25px;
+
+    &:hover {
+      .icon use {
+        fill: lighten($theme, 10%);
+      }
+    }
+
+    .icon {
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
   }
 
   &__location {

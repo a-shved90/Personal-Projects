@@ -18,11 +18,12 @@
       </svg>
       <p>Portfolio</p>
     </router-link>
-    <!-- <router-link to="/skills" class="skills">
-      <svg class="icon icon--skills">
+    <a href="#" to="/blog" class="blog disabled">
+      <svg class="icon icon--blog">
         <use xlink:href="#settings"></use>
-      </svg><p>Skills</p>
-    </router-link>-->
+      </svg>
+      <p>Blog</p>
+    </a>
     <router-link to="/contact" class="contact">
       <svg class="icon icon--contact">
         <use xlink:href="#contact"></use>
@@ -79,23 +80,28 @@ $navNum: 4;
     top: 0;
     background-color: $navBg;
 
+    a:nth-child(5) {
+      bottom: (100% / 5) * 0;
+      transition: all 0.7s ease;
+    }
+
     a:nth-child(4) {
-      bottom: (100% / 4) * 0;
+      bottom: (100% / 5) * 1;
       transition: all 0.6s ease;
     }
 
     a:nth-child(3) {
-      bottom: (100% / 4) * 1;
+      bottom: (100% / 5) * 2;
       transition: all 0.5s ease;
     }
 
     a:nth-child(2) {
-      bottom: (100% / 4) * 2;
+      bottom: (100% / 5) * 3;
       transition: all 0.4s ease;
     }
 
     a:nth-child(1) {
-      bottom: (100% / 4) * 3;
+      bottom: (100% / 5) * 4;
       transition: all 0.3s ease;
     }
 
@@ -133,7 +139,7 @@ $navNum: 4;
     &--portfolio use {
       fill: $blue;
     }
-    &--skills use {
+    &--blog use {
       fill: $green;
     }
     &--contact use {
@@ -146,7 +152,7 @@ $navNum: 4;
     font-weight: bold;
     display: block;
     padding: 30px;
-    height: 25vh;
+    height: calc(100vh / 5);
     width: 100%;
     text-decoration: none;
     border-bottom: 1px solid $borderDark;
@@ -169,7 +175,7 @@ $navNum: 4;
       &.portfolio {
         background-color: rgba($blue, $opacity);
       }
-      &.skills {
+      &.blog {
         background-color: rgba($green, $opacity);
       }
       &.contact {
@@ -188,11 +194,25 @@ $navNum: 4;
       &.portfolio {
         background-color: rgba($blue, $opacity);
       }
-      &.skills {
+      &.blog {
         background-color: rgba($green, $opacity);
       }
       &.contact {
         background-color: rgba($purple, $opacity);
+      }
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      text-decoration: line-through;
+
+      &:hover,
+      &.router-link-exact-active {
+        background-color: $navBg;
+      }
+
+      .icon use {
+        fill: grey;
       }
     }
   }

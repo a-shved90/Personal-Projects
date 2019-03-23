@@ -86,57 +86,57 @@
   "skills": [
     {
       "name": "HTML5",
-      "logo": "logo",
+      "logo": "html",
       "description": "I write clean semantic markup, and currently undergoing a crisis of minimalist vs OOP approach."
     },
     {
       "name": "CSS3 + SASS",
-      "logo": "logo",
+      "logo": "css",
       "description": "My CSS3 includes anything and everything it can get a hold of, if it can be made in CSS - it will be, in a clean, minimalistic and consistent fashion. Unless JS is more appropriate of course."
     },
     {
       "name": "Device and Browser agnostic",
-      "logo": "logo",
+      "logo": "responsive",
       "description": "With mobile-first approach, I write fully responsive code, tested across multiple platforms before release."
     },
     {
       "name": "WAI & a11y accessibile",
-      "logo": "logo",
+      "logo": "accessibility",
       "description": "My websites cater to various user disabilities, and ease of access through all kinds of media."
     },
     {
       "name": "JS (ES6+)",
-      "logo": "logo",
+      "logo": "javascript",
       "description": "Thoroughly linted, clear and easily reausable OOP approach."
     },
     {
       "name": "Vue/Vuex",
-      "logo": "logo",
+      "logo": "",
       "description": "I picked up Vue over a year ago thanks to my last workplace. A huge timesaver."
     },
     {
       "name": "React/Redux",
-      "logo": "logo",
+      "logo": "",
       "description": "I experimented with react back when it was still new, as a small side project."
     },
     {
-      "name": "SQL/Postgress",
-      "logo": "logo",
+      "name": "SQL/PostgreSQL",
+      "logo": "database",
       "description": "I've done a bit of SQL data management and shuffling tables around via node scripts."
     },
     {
       "name": ".NET, C#, Umbraco",
-      "logo": "logo",
+      "logo": "",
       "description": "By no means profficient, I've done minor MVC and back end work during my time with E78"
     },
     {
       "name": "PHP and Wordpress",
-      "logo": "logo",
+      "logo": "php",
       "description": "I have done a few tickets and freelance contracts on Wordpress, nothing major, but enough to get the basics right."
     },
     {
       "name": "Git",
-      "logo": "logo",
+      "logo": "git",
       "description": "Git is my primary SVN of choice, either via github or gitbash or regular terminal."
     }
   ],

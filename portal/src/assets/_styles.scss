@@ -34,7 +34,7 @@ body {
   color: $mainTextColor;
 }
 
-#main{
+#main {
   padding: 20px;
 }
 
@@ -43,12 +43,12 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
 
-  .col__full{
+  .col__full {
     grid-column: span 6;
     grid-gap: 0;
   }
 
-  .col__1-2{
+  .col__1-2 {
     grid-column: span 6;
   }
 
@@ -56,18 +56,18 @@ body {
     grid-column: 1 / span 6;
   }
 
-  .col__1-3{
+  .col__1-3 {
     grid-column: 1 / span 6;
   }
 }
 
 @media all and (min-width: 768px) {
-  .container{
+  .container {
     .col__2-3 {
       grid-column: 1 / span 4;
     }
-  
-    .col__1-3{
+
+    .col__1-3 {
       grid-column: 5 / span 2;
     }
   }
@@ -78,8 +78,8 @@ body {
     display: grid;
     grid-template-columns: 300px calc(100% - 300px);
   }
-  .container{
-    .col__1-2{
+  .container {
+    .col__1-2 {
       grid-column: span 3;
     }
   }

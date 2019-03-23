@@ -1,6 +1,11 @@
 <template>
   <section class="project">
-    <h3 class="project__title">{{ project.title }}</h3>
+    <h3 class="project__title">
+      <svg class="icon">
+        <use xlink:href="#light-bulb"></use>
+      </svg>
+      {{ project.title }}
+    </h3>
     <p
       class="project__description"
       v-if="
@@ -36,6 +41,24 @@ $theme: $blue;
 
   &__title {
     margin: 0;
+    padding-left: 40px;
+    position: relative;
+
+    .icon {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 30px;
+      height: 30px;
+
+      use {
+        fill: $blue;
+      }
+
+      .bob {
+        fill: $orange;
+      }
+    }
   }
 
   a {
