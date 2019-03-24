@@ -2,7 +2,7 @@
   <section class="project">
     <h3 class="project__title">
       <svg class="icon">
-        <use xlink:href="#light-bulb"></use>
+        <use xlink:href="#lightbulb"></use>
       </svg>
       {{ project.title }}
     </h3>

@@ -2,7 +2,7 @@
   <section class="skill" :class="{ open: isOpen }">
     <p class="skill__name" @click="toggleDesc()">
       <svg class="icon icon--skill">
-        <use xlink:href="#home" :class="skill.logo"></use>
+        <use :xlink:href="'#' + skill.logo" :class="skill.logo"></use>
       </svg>
       {{ skill.name }}
       <svg class="icon icon--chevron">

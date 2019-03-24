@@ -20,7 +20,7 @@
     </router-link>
     <a href="#" to="/blog" class="blog disabled">
       <svg class="icon icon--blog">
-        <use xlink:href="#settings"></use>
+        <use xlink:href="#skills"></use>
       </svg>
       <p>Blog</p>
     </a>

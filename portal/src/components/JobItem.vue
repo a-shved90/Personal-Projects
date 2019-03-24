@@ -4,7 +4,7 @@
       <h3 class="job__company">
         <a :href="job.link" class="job_link link" target="_blank">
           <svg class="icon">
-            <use xlink:href="#town"></use>
+            <use xlink:href="#office"></use>
           </svg>
           {{ job.company }}
         </a>
