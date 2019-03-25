@@ -111,12 +111,12 @@
     },
     {
       "name": "Vue/Vuex",
-      "logo": "",
+      "logo": "vue",
       "description": "I picked up Vue over a year ago thanks to my last workplace. A huge timesaver."
     },
     {
       "name": "React/Redux",
-      "logo": "",
+      "logo": "react",
       "description": "I experimented with react back when it was still new, as a small side project."
     },
     {

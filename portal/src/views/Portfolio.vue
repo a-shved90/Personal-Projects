@@ -27,7 +27,7 @@
               href="https://web.archive.org/web/20170929043407/https://brandimpactawards.com/"
               target="_blank"
               rel="noopener"
-              >https://web.archive.org/web/20170929043407/https://brandimpactawards.com/</a
+              >https://brandimpactawards.com/</a
             >
           </li>
           <li>
@@ -40,11 +40,11 @@
               href="https://web.archive.org/web/20160331145150/http://www.malfordoflondon.com/"
               target="_blank"
               rel="noopener"
-              >https://web.archive.org/web/20160331145150/http://www.malfordoflondon.com/</a
+              >http://www.malfordoflondon.com/</a
             >
           </li>
           <li>
-            <a href="http://shved.co.uk/Samples/" target="_blank" rel="noopener"
+            <a href="https://github.com/shved90/Freelance" target="_blank" rel="noopener"
               >List of static sites I've worked on</a
             >
           </li>

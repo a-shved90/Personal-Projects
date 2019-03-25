@@ -37,6 +37,7 @@
         <!-- social links can be a component -->
         <a
           class="social__url"
+          v-if="classmate.id"
           :href="'https://www.facebook.com/' + classmate.id"
           target="_blank"
           rel="noopener"
@@ -143,6 +144,7 @@ $color: white;
   &__name {
     color: $color;
     margin: 0 0 10px;
+    text-transform: capitalize;
   }
 
   .icon {
