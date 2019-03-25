@@ -13,7 +13,9 @@
         <path
           d="M0,13.635c0,0,0.847,1.561,2.694,0l11.038-9.338l10.349,9.28c2.138,1.542,2.939,0,2.939,0 L13.732,1.54L0,13.635z"
         ></path>
-        <polygon points="23.83,4.275 21.168,4.275 21.179,7.503 23.83,9.752 "></polygon>
+        <polygon
+          points="23.83,4.275 21.168,4.275 21.179,7.503 23.83,9.752 "
+        ></polygon>
       </symbol>
       <symbol id="portfolio" viewBox="0 0 478.157 478.158">
         <title>portfolio</title>
@@ -55,7 +57,9 @@
         <title>resume</title>
         <g>
           <g>
-            <polygon points="334.879,7.93 334.879,94.307 421.256,94.307 "></polygon>
+            <polygon
+              points="334.879,7.93 334.879,94.307 421.256,94.307 "
+            ></polygon>
           </g>
         </g>
         <g>
@@ -95,7 +99,9 @@
         </g>
         <g>
           <g>
-            <polygon points="210.861,165.37 215.405,171.564 223.418,156.978 "></polygon>
+            <polygon
+              points="210.861,165.37 215.405,171.564 223.418,156.978 "
+            ></polygon>
           </g>
         </g>
       </symbol>
@@ -249,8 +255,16 @@
           y2="-265.4464136668"
         >
           <stop offset="0" stop-color="#a1b5d8" stop-opacity="0"></stop>
-          <stop offset=".3094" stop-color="#90a2bd" stop-opacity=".309804"></stop>
-          <stop offset=".7554" stop-color="#7c8b9c" stop-opacity=".756863"></stop>
+          <stop
+            offset=".3094"
+            stop-color="#90a2bd"
+            stop-opacity=".309804"
+          ></stop>
+          <stop
+            offset=".7554"
+            stop-color="#7c8b9c"
+            stop-opacity=".756863"
+          ></stop>
           <stop offset="1" stop-color="#748290"></stop>
         </linearGradient>
         <linearGradient
@@ -262,9 +276,21 @@
           y2="531.773969673"
         >
           <stop offset="0" stop-color="#fae100" stop-opacity="0"></stop>
-          <stop offset=".3068" stop-color="#fca800" stop-opacity=".305882"></stop>
-          <stop offset=".6275" stop-color="#fe7300" stop-opacity=".627451"></stop>
-          <stop offset=".8685" stop-color="#ff5200" stop-opacity=".866667"></stop>
+          <stop
+            offset=".3068"
+            stop-color="#fca800"
+            stop-opacity=".305882"
+          ></stop>
+          <stop
+            offset=".6275"
+            stop-color="#fe7300"
+            stop-opacity=".627451"
+          ></stop>
+          <stop
+            offset=".8685"
+            stop-color="#ff5200"
+            stop-opacity=".866667"
+          ></stop>
           <stop offset="1" stop-color="#ff4500"></stop>
         </linearGradient>
         <linearGradient id="d">
@@ -406,7 +432,10 @@
       </symbol>
       <symbol id="css" viewBox="0 0 512 512">
         <title>css</title>
-        <polygon style="fill:#2196F3;" points="32,0 72.8,460.8 256,512 439.136,460.832 480,0 "></polygon>
+        <polygon
+          style="fill:#2196F3;"
+          points="32,0 72.8,460.8 256,512 439.136,460.832 480,0 "
+        ></polygon>
         <polygon
           style="fill:#FAFAFA;"
           points="392.768,150.688 387.616,208.576 372.064,382.112 256,414.208 255.904,414.24 139.904,382.112 131.808,291.36 188.64,291.36 192.864,338.432 255.936,355.456 255.968,355.424 319.136,338.4 327.744,259.968 129.088,260.512 123.456,206.88 332.512,204.416 336.736,147.008 117.856,147.616 114.176,94.208 256,94.208 397.824,94.208 "
@@ -461,10 +490,12 @@
           <path
             d="M18.8 375.4L-5 113.4l256.4.1-23.6 261.7L123 404.8 18.8 375.4zm189.7-14.3l19.9-224.4h-105l.8 247.5 84.3-23.1zm-94.9-191.5H88.1l-.3 134.3-49.5-13.5.1 30.7 75.2 20.3V169.6z"
           ></path>
-          <path fill="#dab92d"
+          <path
+            fill="#dab92d"
             d="M105.2 338.9c-3.3-1-19.6-5.4-36.2-9.9l-30.1-8.1v-15.1c0-14.8 0-15.1 1.5-14.6.8.3 11.8 3.3 24.4 6.8l22.9 6.3.2-67 .2-67h25v85.2c0 67.7-.2 85.2-.9 85.2-.5-.1-3.7-.9-7-1.8z"
           ></path>
-          <path fill="#272727"
+          <path
+            fill="#272727"
             d="M38.4 321.1l-.1-30.7s31.6 8.9 49.5 13.5l.3-134.2h25.5v171.7l-75.2-20.3z"
           ></path>
           <path
@@ -494,7 +525,12 @@
           fill-rule="evenodd"
           transform="matrix(.05695957 0 0 .05695957 .647744 2.43826)"
         >
-          <circle cx="269.52899" cy="237.62801" fill="#00d8ff" r="50.167"></circle>
+          <circle
+            cx="269.52899"
+            cy="237.62801"
+            fill="#00d8ff"
+            r="50.167"
+          ></circle>
           <g stroke="#00d8ff" stroke-width="24">
             <path
               d="m269.529 135.628c67.356 0 129.928 9.665 177.107 25.907 56.844 19.569 91.794 49.233 91.794 76.093 0 27.991-37.041 59.503-98.083 79.728-46.151 15.291-106.879 23.272-170.818 23.272-65.554 0-127.63-7.492-174.29-23.441-59.046-20.182-94.611-52.103-94.611-79.559 0-26.642 33.37-56.076 89.415-75.616 47.355-16.509 111.472-26.384 179.486-26.384z"
@@ -566,8 +602,20 @@
           style="fill:#673AB7;"
           d="M48,0L16,96v352h128v64h64l64-64h96l128-136.32V0H48z M464,288l-89.6,96H260.928L192,434.144V384H80 V32h384V288z"
         ></path>
-        <rect x="240" y="128" style="fill:#673AB7;" width="32" height="128"></rect>
-        <rect x="336" y="128" style="fill:#673AB7;" width="32" height="128"></rect>
+        <rect
+          x="240"
+          y="128"
+          style="fill:#673AB7;"
+          width="32"
+          height="128"
+        ></rect>
+        <rect
+          x="336"
+          y="128"
+          style="fill:#673AB7;"
+          width="32"
+          height="128"
+        ></rect>
       </symbol>
       <symbol id="asp" viewBox="0 0 511.999 511.999">
         <title>asp</title>

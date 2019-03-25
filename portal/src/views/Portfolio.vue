@@ -44,7 +44,10 @@
             >
           </li>
           <li>
-            <a href="https://github.com/shved90/Freelance" target="_blank" rel="noopener"
+            <a
+              href="https://github.com/shved90/Freelance"
+              target="_blank"
+              rel="noopener"
               >List of static sites I've worked on</a
             >
           </li>
