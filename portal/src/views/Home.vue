@@ -25,8 +25,8 @@
       <div class="col__1-2">
         <h2>Projects</h2>
         <p>
-          Very WIP section missing Portfolio pieces, but have a look anyway ->
-          <a href="/portfolio">portfolio</a>
+          Very WIP section with both completed work and planned projects, have a
+          look in <a href="/portfolio">portfolio</a>.
         </p>
         <ProjectItem :project="projects" />
       </div>

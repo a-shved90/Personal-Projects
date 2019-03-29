@@ -1,5 +1,17 @@
 {
-  "name": "Alexander Shved",
+  "profile": {
+    "name": "Alexander Shved",
+    "email": "a.shved90@gmail.com",
+    "social": {
+      "email": "a.shved90@gmail.com",
+      "github": "https://github.com/shved90",
+      "facebook": "https://www.facebook.com/100002157118009",
+      "twitter": "https://twitter.com/Shved_90",
+      "vkontakte": "https://vk.com/a.shved90",
+      "skype": "skype:xel.naga74?add",
+      "peopleperhour": "https://pph.me/shved"
+    }
+  },
   "jobs": [
     {
       "company": "fresh8Gaming (Connected Ventures)",
@@ -40,7 +52,7 @@
         {
           "short": "Amazing place to work at, utmost attention to detail, great relationship with clients, full support from back end developers and always great care to deliver a website that everyone in the office can be proud to put their name on.",
           "long": [
-            "My responsibilities include a full front end package – HTML, CSS (SASS) and JS (Vanilla, Jquery, Prototype),integrating designs into a PHP based back end system called Spirit, I interact with PHP on a regular basis and while I don’t write any from scratch I frequently interact with existing scripts, copying and editing when necessary, sometimes creating entire modules from existing pieces. After finalizing the project brief with the client, our UX designers build a framework that Digital Designers flesh out and create a full design from, including an asset sheet and interaction patterns, and sometimes reusable blocks too.",
+            "My responsibilities include a full front end package – HTML, CSS (SASS) and JS (Vanilla, Jquery, Prototype), integrating designs into a PHP based back end system called <a href=\"https://deepbluesky.com/news/-/how-does-spirit-differ-from-a-traditional-cms-like-wordpress-256/\" target=\"_blank\" rel=\"noopener\">Spirit</a>, I interact with PHP on a regular basis and while I don’t write any from scratch I frequently interact with existing scripts, copying and editing when necessary, sometimes creating entire modules from existing pieces. After finalizing the project brief with the client, our UX designers build a framework that Digital Designers flesh out and create a full design from, including an asset sheet and interaction patterns, and sometimes reusable blocks too.",
             "Then Front end developers take it apart and build a fully responsive, cross browser tested, interactive and animated site. At the same time PHP developers build new modules for our bespoke CMS and prepare additional functionality for the site if required, ready to be merged with front end. After Spirit and front end code is merged and turned into a fully functional site UX and UI designers go over the whole process and make sure it flows just as intended, if not – additional revisions are added and the whole site is tweaked to be the best it can be.",
             "Versioning is done with Git and Codebase, most of which is managed through terminal, including SASS compiler and branch hierarchy."
           ]
@@ -77,7 +89,7 @@
       "role": "Trainee Web Developer",
       "description": [
         {
-          "short": "Duties inlude HTML/CSS/JS website development according to designs supplied by in-house designer. Completed work was then uploaded and synced to TortoiseSVN and passed on to senior developers for review. Extra work consisted of CMS management.",
+          "short": "Duties included HTML/CSS/JS website development according to designs supplied by in-house designer. Completed work was then uploaded and synced to TortoiseSVN and passed on to senior developers for review. Extra work consisted of CMS management.",
           "long": ""
         }
       ]
@@ -87,7 +99,7 @@
     {
       "name": "HTML5",
       "logo": "html",
-      "description": "I write clean semantic markup, and currently undergoing a crisis of minimalist vs OOP approach."
+      "description": "I write clean semantic markup, and currently undergoing a crisis of minimalist vs OO approach that came from modern frameworks such as Vue."
     },
     {
       "name": "CSS3 + SASS",
@@ -100,7 +112,7 @@
       "description": "With mobile-first approach, I write fully responsive code, tested across multiple platforms before release."
     },
     {
-      "name": "WAI & a11y accessibile",
+      "name": "WAI & a11y accessible",
       "logo": "accessibility",
       "description": "My websites cater to various user disabilities, and ease of access through all kinds of media."
     },
@@ -112,7 +124,7 @@
     {
       "name": "Vue/Vuex",
       "logo": "vue",
-      "description": "I picked up Vue over a year ago thanks to my last workplace. A huge timesaver."
+      "description": "I picked up Vue over a year ago thanks to my last workplace. It proved smooth and efficient at what it does, huge timesaver."
     },
     {
       "name": "React/Redux",
@@ -127,7 +139,7 @@
     {
       "name": ".NET, C#, Umbraco",
       "logo": "asp",
-      "description": "By no means profficient, I've done minor MVC and back end work during my time with E78"
+      "description": "By no means proficient, I've done minor MVC and back end work during my time with E78"
     },
     {
       "name": "PHP and Wordpress",
@@ -137,7 +149,7 @@
     {
       "name": "Git",
       "logo": "git",
-      "description": "Git is my primary SVN of choice, either via github or gitbash or regular terminal."
+      "description": "Git is my primary versioning system of choice, either via github or gitbash or regular terminal. I also used TortoiseSVN way back in the day. And BitBucket for a few freelance projects thanks to its free private repos."
     }
   ],
   "education": [
@@ -166,6 +178,57 @@
       "degree": "NVQ Lv2 and BTEC Lv3 in IT",
       "modules": "",
       "description": "Double Distinction graduation award in such course modules as Web Design and Development, Database Management, and E-Commerce."
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "fresh8gaming",
+      "url": "http://fresh8gaming.com/",
+      "logo": "f8ads",
+      "summary": "Custom built pattern library using atomic design principles. Heavy reliance on flexbox for dynamic element sizing, immense flexibility in switching out atoms in molecules for a fully dynamic ad. Built with Vuejs, this allows for any client brand coating to come from CMS, as well as atom/molecule configuration.",
+      "description": [
+        "Core feature of the ads was the ability to edit their content on the fly from CMS and see the results reflecting live within seconds.",
+        "Originally, ads were built from a standard set of templates that were manually styled and tweaked based on client approved designs. This was a fairly straightforward but tedious process as both HTML and CSS were changing from ad to ad, requiring full testing coverage every time, including IE10+. Data was primarily server through a monolithic PostgreSQL database that required constant manual updates to setup the end product. There were also services like localization, classifier, and CMS. Each of them required their own individual setup for a new client.",
+        "One of the key goals for the rebuild was to simplify the rollout, cut down on code/testing/release time, essentially giving the product away to designers to be able to do the whole rollout from start to finish without involving developers.",
+        "We overhauled the entire front end and moved to Vuejs. We chose atomic design for our upcoming pattern library, breaking down our extensive ad building experience into key components that were the building blocks of new ads. Atoms were the smallest bits of data - indicators, logos, buttons, list items etc. And those were the building blocks of our molecule components, headers, footers, and main content blocks of the ads. The highlight of this was the exceedingly dynamic setup where each group of molecules could fit inside any ad size and consistently look good, thanks to flexbox styling.",
+        "Meanwhile backend was being segmented and broken up from a single monolithic database into a collection of microserices segmented in Docker components. A series of node scripts were added to generate folder structure and initial presets for new client build, which automated a huge amount of overhead. A lot of database migrations, and overwhelming amount of individual updates and datapoint creation for new clients were eliminated and grouped up into either scripts or linked services.",
+        "In the end, we cut our delivery time by almost 80%, coming down from over a month, to barely a week. It was a huge success."
+      ]
+    },
+    {
+      "title": "Element78",
+      "url": "https://www.element78.co.uk/",
+      "logo": "element78",
+      "summary": "Original site was built with a rigid and - at the time - glitchy <a href=\"https://github.com/wycats/handlebars.js/\" target=\"_blank\" rel=\"noopener\">handlebars</a> and <a href=\"http://mustache.github.io/mustache.5.html\" target=\"_blank\" rel=\"noopener\">mustache</a> templating framework, with data coming from JSON. New site was rebuild with an in-house pattern library called Alloy, and using Umbraco CMS and .NET backend for dynamic data.",
+      "description": [
+        "I had the honors of rebuilding the entire website as my first project as a new Middleweight developer at E78.",
+        "Rebuild involved a close collaboration with back end team to create and setup Umbraco, plan out necessary  input fields and data we want to show, and expose all the hooks for front end work",
+        "Once the planning and prototyping was done, and BE was being setup, I started working on FE. First thing was to familiarize myself with existing templating system, and while experimenting with it I found it limited and clunky, syntax and nesting had some bugs I had to work around. Then there was Alloy, a fully bespoke in-house styling library which I extended a little to include edge cases I found I needed for the rebuild and additional design layouts.",
+        "Once I did the basic setup on FE side, it was time to merge it with BE hooks and see the glorious half-styled data. This was also my first time adding <a href=\"https://schema.org/\" target=\"_blank\" rel=\"noopener\">Schema.org</a> to the site. Alloy also had a lot of interactive elements such as sliders and accordions built in. In retrospect it was an in-house version of modern frameworks such as React and Vuejs.",
+        "A few weeks later Alloy and Umbraco were fully hooked together it was a simple cleanup to make sure its all running smoothly. Checking Umbraco UX side of things, iron out the kinks in how the data gets passed, optimize when necessary, rework when required.",
+        "The whole project, including learning time and optimization took almost two months, and in the end we had a brand new shiny website that looked almost identical to the old one, but was infinitely more reusable, much easier to update, flexible and a clean code to be proud of."
+      ]
+    },
+    {
+      "title": "Squashskills",
+      "url": "https://squashskills.com/",
+      "logo": "squashskills",
+      "summary": "A step removed from a full-on single page application. A huge portal rich with features, from blogs to videos, with calendars and excersise planner and workout breakdown. This was built using jQuery and PHP-based in-house CMS called <a href=\"https://deepbluesky.com/news/-/how-does-spirit-differ-from-a-traditional-cms-like-wordpress-256/\" target=\"_blank\" rel=\"noopener\">Spirit</a>.",
+      "description": ""
+    },
+    {
+      "title": "Brand Impact Awards",
+      "url": "https://web.archive.org/web/20170929043407/https://brandimpactawards.com/",
+      "logo": "brandimpact",
+      "summary": "A piece of work I am very fond of. An extremely responsie, beautifully made, dynamic website built on Spirit, a PHP-based CMS. Fully custom no frameworks or crutches.",
+      "description": ""
+    },
+    {
+      "title": "Malford of London",
+      "url": "https://web.archive.org/web/20160331145150/http://www.malfordoflondon.com/",
+      "logo": "malford",
+      "summary": "My freelance client requested a series of pages to be built using Bootstrap, to be ported over to Wordpres. I was responsible for homepage, catalogue page, and individual product pages. Accent was made on full responsiveness and layour flexibility to look good at all times.",
+      "description": ""
     }
   ],
   "projects": [

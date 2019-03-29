@@ -30,7 +30,6 @@
       <p class="short" @click="toggleDesc()">{{ item.short }}</p>
       <transition-accordion>
         <div
-          class="p"
           v-show="isOpen"
           v-if="Array.isArray(item.long) && item.long.length > 1"
         >

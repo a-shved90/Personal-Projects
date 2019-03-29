@@ -20,13 +20,16 @@ TODO:
 
 ```
 Portfolio component
-  - relevant project pieces and info writeup
-  - images
+  - relevant project pieces and info writeup - 50%
+  - images - 50%
+  - Put accordions into its own view and normalize JSON
+  - Consider using Slots/Component for large/condensed data blocks
 Contact form
 Tests
 Accessibility
   - expand on semantics with additional accessibility attributes
 Print media querie
+Schema.org
 Blog view and components
   - maybe disqus comment section
 Timeline
