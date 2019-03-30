@@ -20,7 +20,7 @@
           Last workplace. For all the rest, check out my
           <a href="/resume" class="link">resume</a>
         </p>
-        <InfoBlock :content="jobs" :icon="'office'"/>
+        <InfoBlock :content="jobs" :icon="'office'" />
       </div>
       <div class="col__1-2 portfolio">
         <h2>Projects</h2>
@@ -29,7 +29,7 @@
           look in
           <a href="/portfolio" class="link">portfolio</a>.
         </p>
-        <InfoBlock :content="projects" :icon="'lightbulb'"/>
+        <InfoBlock :content="projects" :icon="'lightbulb'" />
       </div>
     </div>
   </div>

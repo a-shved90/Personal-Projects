@@ -10,13 +10,13 @@
       <div class="col__1-2">
         <h2>Highlight of my work</h2>
         <template v-for="example in portfolio">
-          <InfoBlock :content="example" :icon="'portfolio'" :key="example.id"/>
+          <InfoBlock :content="example" :icon="'portfolio'" :key="example.id" />
         </template>
       </div>
       <div class="col__1-2">
         <h2>Things that I find exciting</h2>
         <template v-for="project in projects">
-          <InfoBlock :content="project" :icon="'lightbulb'" :key="project.id"/>
+          <InfoBlock :content="project" :icon="'lightbulb'" :key="project.id" />
         </template>
       </div>
     </div>
@@ -42,7 +42,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 .portfolio {
   $theme: $blue;
   @include InfoBlock($blue);
@@ -53,6 +52,5 @@ export default {
       color: lighten($theme, 15%);
     }
   }
-  
 }
 </style>

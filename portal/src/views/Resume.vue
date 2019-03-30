@@ -4,14 +4,14 @@
       <div class="col__2-3">
         <h2>Places I worked at</h2>
         <template v-for="job in jobs">
-          <InfoBlock :content="job" :icon="'office'" :key="job.id"/>
+          <InfoBlock :content="job" :icon="'office'" :key="job.id" />
         </template>
       </div>
       <div class="col__1-3">
         <h3>Things I'm good at</h3>
         <div class="wrapper">
           <template v-for="skill in skills">
-            <SkillItem :skill="skill" :key="skill.id"/>
+            <SkillItem :skill="skill" :key="skill.id" />
           </template>
         </div>
       </div>

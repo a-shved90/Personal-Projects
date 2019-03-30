@@ -4,16 +4,16 @@
       <h3 class="infoBlock__title">
         <a :href="link" v-if="link" target="_blank" rel="noopener">
           <svg class="icon" v-if="icon">
-            <use :xlink:href="'#'+icon"></use>
+            <use :xlink:href="'#' + icon"></use>
           </svg>
-          <template v-if="title">{{ title}}</template>
+          <template v-if="title">{{ title }}</template>
           <template v-if="company">{{ company }}</template>
         </a>
         <template v-else>
           <svg class="icon" v-if="icon">
-            <use :xlink:href="'#'+icon"></use>
+            <use :xlink:href="'#' + icon"></use>
           </svg>
-          <template v-if="title">{{ title}}</template>
+          <template v-if="title">{{ title }}</template>
           <template v-if="company">{{ company }}</template>
         </template>
       </h3>
@@ -23,11 +23,18 @@
       <h4 class="infoBlock__role" v-if="role">{{ role }}</h4>
       <p class="infoBlock__period" v-if="period">{{ period }}</p>
     </div>
-    <p class="InfoBlock__summary" v-if="summary" @click="toggleDesc()" v-html="summary"></p>
-    <div class="infoBlock__description" v-if="description" :class="{ open: isOpen }">
-      <template v-if="
-          Array.isArray(description) && description.length > 1
-        ">
+    <p
+      class="InfoBlock__summary"
+      v-if="summary"
+      @click="toggleDesc()"
+      v-html="summary"
+    ></p>
+    <div
+      class="infoBlock__description"
+      v-if="description"
+      :class="{ open: isOpen }"
+    >
+      <template v-if="Array.isArray(description) && description.length > 1">
         <transition-accordion>
           <div v-show="isOpen">
             <template v-for="text in description">
@@ -79,8 +86,6 @@ export default {
 </script>
 
 <style lang="scss">
-
-
 $theme: $orange;
 
 .infoBlock {
@@ -90,7 +95,6 @@ $theme: $orange;
   background-color: $bgLight;
   position: relative;
   overflow: hidden;
-
 
   a {
     color: $theme;
