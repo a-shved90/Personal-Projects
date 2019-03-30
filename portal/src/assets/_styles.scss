@@ -84,3 +84,31 @@ body {
     }
   }
 }
+
+@mixin InfoBlock($theme) {
+  .infoBlock {
+    a {
+      color: $theme;
+      &:hover {
+        color: lighten($theme, 10%);
+      }
+    }
+    &__title {
+      .icon {
+        use {
+          fill: $theme;
+        }
+      }
+      &:hover {
+        .icon use {
+          fill: lighten($theme, 10%);
+        }
+      }
+    }
+    &__description {
+      .more {
+        color: $theme;
+      }
+    }
+  }
+}

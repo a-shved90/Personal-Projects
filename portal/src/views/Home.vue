@@ -14,29 +14,29 @@
       </p>
     </div>
     <div class="container">
-      <div class="col__1-2">
+      <div class="col__1-2 resume">
         <h2>Work experience</h2>
         <p>
           Last workplace. For all the rest, check out my
-          <a href="/resume">resume</a>
+          <a href="/resume" class="link">resume</a>
         </p>
-        <JobItem :job="jobs" />
+        <InfoBlock :content="jobs" :icon="'office'"/>
       </div>
-      <div class="col__1-2">
+      <div class="col__1-2 portfolio">
         <h2>Projects</h2>
         <p>
           Very WIP section with both completed work and planned projects, have a
-          look in <a href="/portfolio">portfolio</a>.
+          look in
+          <a href="/portfolio" class="link">portfolio</a>.
         </p>
-        <ProjectItem :project="projects" />
+        <InfoBlock :content="projects" :icon="'lightbulb'"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import JobItem from "../components/JobItem.vue";
-import ProjectItem from "../components/ProjectItem.vue";
+import InfoBlock from "../components/InfoBlock.vue";
 import data from "../assets/data.json";
 
 export default {
@@ -48,25 +48,26 @@ export default {
     };
   },
   components: {
-    JobItem,
-    ProjectItem
+    InfoBlock
   }
 };
 </script>
 
-<style scoped lang="scss">
-$theme: $green;
+<style lang="scss">
+.home {
+  $theme: $green;
 
-a {
-  color: $theme;
+  .link {
+    color: $theme;
 
-  &:hover {
-    color: lighten($theme, 15%);
+    &:hover {
+      color: lighten($theme, 15%);
+    }
   }
-}
 
-.intro p {
-  font-size: 20px;
-  line-height: 26px;
+  .intro p {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 </style>
