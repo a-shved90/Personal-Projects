@@ -34,32 +34,20 @@
         {{ classmate.mobile }}
       </p>
       <div class="classmate__social">
-        <!-- social links can be a component -->
-        <a
-          class="social__url"
-          v-if="classmate.id"
-          :href="'https://www.facebook.com/' + classmate.id"
-          target="_blank"
-          rel="noopener"
-        >
-          <svg class="icon">
-            <use xlink:href="#facebook"></use>
-          </svg>
-        </a>
+        <SocialItem
+          :link="'https://www.facebook.com/' + classmate.id"
+          :icon="'facebook'"
+          :text="false"
+        />
         <template v-if="classmate.social">
-          <a
-            v-for="(item, key) in classmate.social"
-            class="social__url"
-            :class="key"
-            :href="item"
-            :title="key"
-            target="_blank"
-            rel="noopener"
-          >
-            <svg class="icon">
-              <use :xlink:href="'#' + key"></use>
-            </svg>
-          </a>
+          <template v-for="(link, key) in classmate.social">
+            <SocialItem
+              :link="link"
+              :icon="key"
+              :text="false"
+              :key="link.key"
+            />
+          </template>
         </template>
       </div>
     </div>
@@ -68,10 +56,14 @@
 
 <script>
 import dateFormatMixin from "../mixins/dateFormatMixin";
+import SocialItem from "../components/SocialItem.vue";
 export default {
   name: "ClassItem",
   props: {
     classmate: Array
+  },
+  components: {
+    SocialItem
   },
   mixins: [dateFormatMixin],
   methods: {
@@ -99,13 +91,14 @@ export default {
 </script>
 
 <style lang="scss">
-$theme: #4267b2;
-$color: white;
+$theme: #424242;
+$color: #fff;
+$border: #4267b2;
 
 .classmate {
   background-color: $theme;
   border-radius: 10px;
-  border: 1px solid $theme;
+  border: 1px solid $border;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
@@ -137,24 +130,23 @@ $color: white;
     flex-direction: column;
     justify-content: flex-start;
     padding: 30px 10px 10px;
+
+    p .icon {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      use {
+        fill: white;
+      }
+    }
   }
 
   &__name {
     color: $color;
     margin: 0 0 10px;
     text-transform: capitalize;
-  }
-
-  .icon {
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 15px;
-    height: 15px;
-
-    use {
-      fill: white;
-    }
   }
 
   &__location,
@@ -171,20 +163,33 @@ $color: white;
     flex: 1;
     margin-top: 10px;
 
-    .social__url {
+    .socialLink {
       position: relative;
       align-self: flex-end;
-      width: 30px;
-      height: 30px;
+      width: 45px;
+      height: 45px;
 
       .icon {
-        width: 30px;
-        height: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .instagram use {
+        fill: #d000ba;
       }
 
       &:not(:last-of-type) {
-        margin-right: 10px;
+        margin-right: 15px;
       }
+    }
+  }
+
+  &:hover {
+    background: lighten($theme, 5%);
+
+    .classmate__profile {
+      transform: scale(1.05);
     }
   }
 }

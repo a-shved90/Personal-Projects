@@ -6,10 +6,10 @@
     rel="noopener"
     v-if="icon != 'email'"
   >
-    <p>{{ icon }}</p>
     <svg class="icon" :class="icon">
       <use :xlink:href="'#' + icon"></use>
     </svg>
+    <p v-if="text">{{ icon }}</p>
   </a>
 </template>
 
@@ -18,7 +18,8 @@ export default {
   name: "SocialItem",
   props: {
     link: String,
-    icon: String
+    icon: String,
+    text: Boolean
   }
 };
 </script>
@@ -26,16 +27,19 @@ export default {
 <style scoped lang="scss">
 .socialLink {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  text-align: center;
 
-  .icon {
-    width: 50px;
-    height: 50px;
+  p {
+    margin: 0;
   }
 
-  .facebook use {
-    fill: $purple;
+  .icon {
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 </style>

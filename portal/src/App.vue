@@ -6,20 +6,20 @@
         <router-view />
       </transition-page>
     </div>
-    <IconSvg></IconSvg>
+    <SvgIconList></SvgIconList>
   </div>
 </template>
 
 <script>
 import Navigation from "./components/Navigation.vue";
 import TransitionPage from "./components/TransitionPage.vue";
-import IconSvg from "./components/IconSvg.vue";
+import SvgIconList from "./components/SvgIconList.vue";
 
 export default {
   components: {
     Navigation,
     TransitionPage,
-    IconSvg
+    SvgIconList
   }
 };
 </script>
