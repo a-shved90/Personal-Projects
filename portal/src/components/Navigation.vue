@@ -46,7 +46,6 @@ export default {
   },
   methods: {
     navToggle(e) {
-      console.log(e.target);
       if (
         e.target.classList.contains("navToggle") ||
         e.target.parentNode.classList.contains("navToggle")
@@ -66,8 +65,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$navNum: 4;
-
 #nav {
   position: fixed;
   z-index: 10;

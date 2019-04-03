@@ -69,5 +69,12 @@ export default {
     font-size: 20px;
     line-height: 26px;
   }
+
+  .resume {
+    @include InfoBlock($orange);
+  }
+  .portfolio {
+    @include InfoBlock($blue);
+  }
 }
 </style>

@@ -2,7 +2,18 @@
   <div class="resume">
     <div class="container">
       <div class="col__2-3">
-        <h2>Places I worked at</h2>
+        <h2>My job history</h2>
+        <p>
+          I've been around, moved around, and tried new places. I worked for
+          full service agencies and product companies, appreciated both cultures
+          and different approaches. Read below or download a
+          <a
+            href="assets/Alexander_Shved_CV_2019.pdf"
+            target="_blank"
+            rel="noopener"
+            >PDF version</a
+          >.
+        </p>
         <template v-for="job in jobs">
           <InfoBlock :content="job" :icon="'office'" :key="job.id" />
         </template>
@@ -41,7 +52,17 @@ export default {
 
 <style lang="scss">
 .resume {
-  @include InfoBlock($orange);
+  $theme: $orange;
+
+  a {
+    color: $theme;
+
+    &:hover {
+      color: lighten($theme, 15%);
+    }
+  }
+
+  @include InfoBlock($theme);
   .col__1-3 {
     .wrapper {
       display: grid;

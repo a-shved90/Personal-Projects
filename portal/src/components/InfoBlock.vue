@@ -54,12 +54,8 @@ import TransitionAccordion from "../components/TransitionAccordion.vue";
 export default {
   name: "InfoBlock",
   props: {
-    content: {
-      Type: Array
-    },
-    icon: {
-      Type: String
-    }
+    content: Object,
+    icon: String
   },
   data() {
     return {

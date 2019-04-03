@@ -1,22 +1,48 @@
 <template>
   <div class="contact">
     <h1>contact me</h1>
-    <p>
-      currently very wip, meanwhile you can contact me at
-      <a href="mailto:a.shved90@gmail.com">a.shved90@gmail.com</a>
-    </p>
+    <div class="container">
+      <div class="col__1-2">
+        <h2>Highlight of my work</h2>
+        <template v-for="(link, id) in socials">
+          <SocialItem :link="link" :icon="id" :key="link.id" />
+        </template>
+      </div>
+      <div class="col__1-2">
+        <h2>Things that I find exciting</h2>
+        <p>contact form goes here</p>
+      </div>
+    </div>
     <!-- https://tylerkrys.ca/blog/adding-nodemailer-email-contact-form-node-express-app -->
   </div>
 </template>
 
-<style scoped lang="scss">
-$theme: $purple;
+<script>
+import SocialItem from "../components/SocialItem.vue";
+import data from "../assets/data.json";
+export default {
+  name: "contact",
+  data() {
+    return {
+      socials: data.profile.social
+    };
+  },
+  components: {
+    SocialItem
+  }
+};
+</script>
 
-a {
-  color: $theme;
+<style lang="scss">
+.contact {
+  $theme: $purple;
 
-  &:hover {
-    color: lighten($theme, 15%);
+  a {
+    color: $theme;
+
+    &:hover {
+      color: lighten($theme, 15%);
+    }
   }
 }
 </style>

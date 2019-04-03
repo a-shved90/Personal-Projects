@@ -1,9 +1,9 @@
-import { shallowMount } from "@vue/test-utils";
+import { mount } from "@vue/test-utils";
 import ClassmateItem from "@/components/ClassmateItem.vue";
 
 describe("ClassmateItem.vue", () => {
   it("renders props.msg when passed", () => {
-    const wrapper = shallowMount(ClassmateItem, {
+    const wrapper = mount(ClassmateItem, {
       propsData: {
         classmate: [
           {
@@ -12,14 +12,26 @@ describe("ClassmateItem.vue", () => {
             location: "Bristol",
             country: "United Kingdom",
             birthday: "1990-04-15",
+            mobile: "+447871792047",
             social: {
               twitter: "https://twitter.com/Shved_90",
               vkontakte: "https://vk.com/a.shved90"
             }
+          },
+          {
+            id: 100002032335722,
+            name: "Anna Maslovska",
+            location: "Newmarket",
+            country: "United Kingdom",
+            birthday: "1990-06-03"
           }
         ]
       }
     });
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    wrapper.vm.coverImgUrl(wrapper[0].classmate.name);
+    wrapper.vm.profileImgUrl(wrapper[0].classmate.name);
+    expect(wrapper[0].coverImgUrl(wrapper[0].classmate.name)).toBe(
+      "../assets/classmates/shvedCover.jpg"
+    );
   });
 });

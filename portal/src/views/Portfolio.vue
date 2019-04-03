@@ -1,11 +1,16 @@
 <template>
   <div class="portfolio">
     <h1>Portfolio and things I worked on</h1>
-    <p>
-      The WIPest of the WIP sections, while I hunt down things from previous
-      workplaces and put them all together, come up with images and do a nice
-      writeup.
-    </p>
+    <div class="container">
+      <div class="col__1-2">
+        <p>
+          I have a wide field of interests both inside and outside of
+          development. Here you'll find some highlights of my work, as well as
+          some projects I have either planned for the future or currently in the
+          works.
+        </p>
+      </div>
+    </div>
     <div class="container">
       <div class="col__1-2">
         <h2>Highlight of my work</h2>

@@ -71,9 +71,7 @@ import dateFormatMixin from "../mixins/dateFormatMixin";
 export default {
   name: "ClassItem",
   props: {
-    classmate: {
-      Type: Array
-    }
+    classmate: Array
   },
   mixins: [dateFormatMixin],
   methods: {

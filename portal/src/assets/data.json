@@ -129,7 +129,7 @@
     },
     {
       "name": "Git",
-      "logo": "git",
+      "logo": "github",
       "description": "Git is my primary versioning system of choice, either via github or gitbash or regular terminal. I also used TortoiseSVN way back in the day. And BitBucket for a few freelance projects thanks to its free private repos."
     }
   ],

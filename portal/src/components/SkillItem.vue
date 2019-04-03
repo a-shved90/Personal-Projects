@@ -20,9 +20,7 @@ import TransitionAccordion from "../components/TransitionAccordion.vue";
 export default {
   name: "SkillItem",
   props: {
-    skill: {
-      Type: Array
-    }
+    skill: Object
   },
   data() {
     return {
