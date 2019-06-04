@@ -24,7 +24,6 @@ Portfolio component
   - images - 50%
   - Put accordions into its own view and normalize JSON
   - Consider using Slots/Component for large/condensed data blocks
-Contact form
 Tests
 Accessibility
   - expand on semantics with additional accessibility attributes

@@ -32,10 +32,10 @@ export default new Router({
         import(/* webpackChunkName: "skills" */ "./views/Skills.vue")
     },
     {
-      path: "/contact",
-      name: "contact",
+      path: "/social",
+      name: "social",
       component: () =>
-        import(/* webpackChunkName: "contact" */ "./views/Contact.vue")
+        import(/* webpackChunkName: "social" */ "./views/Social.vue")
     },
     {
       path: "/classmates",

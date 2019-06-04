@@ -4,6 +4,7 @@
     :href="link"
     target="_blank"
     rel="noopener"
+    :title="'link to ' + icon"
     v-if="icon != 'email'"
   >
     <svg class="icon" :class="icon">

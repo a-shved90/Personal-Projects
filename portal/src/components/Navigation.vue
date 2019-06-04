@@ -18,17 +18,17 @@
       </svg>
       <p>Portfolio</p>
     </router-link>
-    <a href="#" to="/blog" class="blog disabled">
+    <!-- <a href="#" to="/blog" class="blog disabled">
       <svg class="icon icon--blog">
         <use xlink:href="#skills"></use>
       </svg>
       <p>Blog</p>
-    </a>
-    <router-link to="/contact" class="contact">
-      <svg class="icon icon--contact">
+    </a> -->
+    <router-link to="/social" class="social">
+      <svg class="icon icon--social">
         <use xlink:href="#contact"></use>
       </svg>
-      <p>Contact</p>
+      <p>Social</p>
     </router-link>
     <button class="navToggle">
       <span></span>
@@ -77,28 +77,28 @@ export default {
     top: 0;
     background-color: $navBg;
 
-    a:nth-child(5) {
-      bottom: (100% / 5) * 0;
-      transition: all 0.7s ease;
-    }
+    // a:nth-child(5) {
+    //   bottom: (100% / 5) * 0;
+    //   transition: all 0.7s ease;
+    // }
 
     a:nth-child(4) {
-      bottom: (100% / 5) * 1;
+      bottom: (100% / 4) * 0;
       transition: all 0.6s ease;
     }
 
     a:nth-child(3) {
-      bottom: (100% / 5) * 2;
+      bottom: (100% / 4) * 1;
       transition: all 0.5s ease;
     }
 
     a:nth-child(2) {
-      bottom: (100% / 5) * 3;
+      bottom: (100% / 4) * 2;
       transition: all 0.4s ease;
     }
 
     a:nth-child(1) {
-      bottom: (100% / 5) * 4;
+      bottom: (100% / 4) * 3;
       transition: all 0.3s ease;
     }
 
@@ -139,7 +139,7 @@ export default {
     &--blog use {
       fill: $green;
     }
-    &--contact use {
+    &--social use {
       fill: $purple;
     }
   }
@@ -149,7 +149,7 @@ export default {
     font-weight: bold;
     display: block;
     padding: 30px;
-    height: calc(100vh / 5);
+    height: calc(100vh / 4);
     width: 100%;
     text-decoration: none;
     border-bottom: 1px solid $borderDark;
@@ -175,7 +175,7 @@ export default {
       &.blog {
         background-color: rgba($green, $opacity);
       }
-      &.contact {
+      &.social {
         background-color: rgba($purple, $opacity);
       }
     }
@@ -194,7 +194,7 @@ export default {
       &.blog {
         background-color: rgba($green, $opacity);
       }
-      &.contact {
+      &.social {
         background-color: rgba($purple, $opacity);
       }
     }

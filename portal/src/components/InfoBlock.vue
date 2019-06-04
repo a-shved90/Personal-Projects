@@ -2,20 +2,10 @@
   <article class="infoBlock">
     <div class="infoBlock__infoWrapper">
       <h3 class="infoBlock__title">
-        <a :href="link" v-if="link" target="_blank" rel="noopener">
-          <svg class="icon" v-if="icon">
-            <use :xlink:href="'#' + icon"></use>
-          </svg>
-          <template v-if="title">{{ title }}</template>
-          <template v-if="company">{{ company }}</template>
+        <a :href="link" v-if="link" :title="blockName" target="_blank" rel="noopener">
+          <InfoBlockTitle :title="blockName" :icon="icon"/>
         </a>
-        <template v-else>
-          <svg class="icon" v-if="icon">
-            <use :xlink:href="'#' + icon"></use>
-          </svg>
-          <template v-if="title">{{ title }}</template>
-          <template v-if="company">{{ company }}</template>
-        </template>
+        <InfoBlockTitle v-else :title="blockName" :icon="icon"/>
       </h3>
       <p class="infoBlock__location" v-if="location">{{ location }}</p>
     </div>
@@ -23,17 +13,15 @@
       <h4 class="infoBlock__role" v-if="role">{{ role }}</h4>
       <p class="infoBlock__period" v-if="period">{{ period }}</p>
     </div>
-    <p
-      class="InfoBlock__summary"
-      v-if="summary"
-      @click="toggleDesc()"
-      v-html="summary"
-    ></p>
-    <div
-      class="infoBlock__description"
-      v-if="description"
-      :class="{ open: isOpen }"
-    >
+    <template v-if="Array.isArray(summary) && summary.length > 1">
+      <div class="InfoBlock__summary" @click="toggleDesc()">
+        <template v-for="text in summary">
+          <p v-html="text" :key="text.id"></p>
+        </template>
+      </div>
+    </template>
+    <p class="InfoBlock__summary" v-else @click="toggleDesc()" v-html="summary"></p>
+    <div class="infoBlock__description" v-if="description" :class="{ open: isOpen }">
       <template v-if="Array.isArray(description) && description.length > 1">
         <transition-accordion>
           <div v-show="isOpen">
@@ -42,7 +30,7 @@
             </template>
           </div>
         </transition-accordion>
-        <p class="more" @click="toggleDesc()">Read more</p>
+        <p class="more" @click="toggleDesc()">{{ isOpen ? "Read less" : "Read more" }}</p>
       </template>
       <p v-html="description" v-else></p>
     </div>
@@ -51,6 +39,8 @@
 
 <script>
 import TransitionAccordion from "../components/TransitionAccordion.vue";
+import InfoBlockTitle from "../components/InfoBlockTitle.vue";
+import InfoBlockContent from "../components/InfoBlockContent.vue";
 export default {
   name: "InfoBlock",
   props: {
@@ -75,8 +65,15 @@ export default {
       this.isOpen = !this.isOpen;
     }
   },
+  computed: {
+    blockName: function() {
+      return this.company ? this.company : this.title;
+    }
+  },
   components: {
-    TransitionAccordion
+    TransitionAccordion,
+    InfoBlockTitle,
+    InfoBlockContent
   }
 };
 </script>
