@@ -1,9 +1,14 @@
 <template>
   <div class="contact">
     <h1>My socials</h1>
-    <SocialItem :link="'mailto:' + socials.email" :icon="'contact'" title="link to email" :text="true"/>
+    <SocialItem
+      :link="'mailto:' + socials.email"
+      :icon="'contact'"
+      title="link to email"
+      :text="true"
+    />
     <template v-for="(link, id) in socials">
-      <SocialItem :link="link" :icon="id" :text="true" :key="link.id"/>
+      <SocialItem :link="link" :icon="id" :text="true" :key="link.id" />
     </template>
   </div>
 </template>

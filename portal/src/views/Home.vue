@@ -6,8 +6,8 @@
         <div class="col__1-2">
           <p>
             I'm a web developer based in Bristol. My main focus is front end
-            development, although I seem to be branching off to engineering side of
-            things with Vue, tooling, and single page app development.
+            development, although I seem to be branching off to engineering side
+            of things with Vue, tooling, and single page app development.
           </p>
         </div>
       </div>
@@ -19,19 +19,16 @@
           Last workplace. For all the rest, check out my
           <a href="/resume" class="link">resume</a>
         </p>
-        <InfoBlock :content="jobs" :icon="'office'"/>
+        <InfoBlock :content="jobs" :icon="'office'" />
       </div>
       <div class="col__1-2 portfolio">
         <h2>Projects</h2>
         <p>
           Very WIP section with both completed work and planned projects, have a
           look in
-          <a
-            href="/portfolio"
-            class="link"
-          >portfolio</a>.
+          <a href="/portfolio" class="link">portfolio</a>.
         </p>
-        <InfoBlock :content="projects" :icon="'lightbulb'"/>
+        <InfoBlock :content="projects" :icon="'lightbulb'" />
       </div>
     </div>
   </div>

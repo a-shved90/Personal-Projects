@@ -5,6 +5,7 @@
     "social": {
       "email": "a.shved90@gmail.com",
       "github": "https://github.com/shved90",
+      "codepen": "https://codepen.io/shved90/",
       "linkedin": "https://www.linkedin.com/in/shved90/",
       "facebook": "https://www.facebook.com/100002157118009",
       "twitter": "https://twitter.com/Shved_90",
@@ -29,7 +30,7 @@
       "logo": "logo",
       "location": "Bristol",
       "period": "March 2016 - May 2017",
-      "role": "Middleweight Web Developer",
+      "role": "Mid-weight Web Developer",
       "summary": "A mid-weight developer position in a well established full service digital agency with a goal to train and grow to a senior web developer and team lead role in the near future.",
       "description": "I work closely with Frontend and Backend teams to evaluate and improve current development cycle, research and present new technologies to the office to further optimize the development process and bring both teams closer together for a tighter collaboration and seamless integration of their work. Of course I still have a hand in front end web development, fleshing out designs and building a pleasant browsing experience across all media and devices, to a high code standard and with accessibility in mind. A broad selection of tools are used on a daily basis, Visual studio and Sublime are the IDEs of choice for our developers, TFS for version control and LESS/Handlebars mixture for quick and efficient BEM prototyping before merging a website with Umbraco/Sitecore functionality."
     },
@@ -181,7 +182,7 @@
       "logo": "element78",
       "summary": "Original site was built with a rigid and - at the time - glitchy <a href=\"https://github.com/wycats/handlebars.js/\" target=\"_blank\" rel=\"noopener\">handlebars</a> and <a href=\"http://mustache.github.io/mustache.5.html\" target=\"_blank\" rel=\"noopener\">mustache</a> templating framework, with data coming from JSON. New site was rebuild with an in-house pattern library called Alloy, and using Umbraco CMS and .NET backend for dynamic data.",
       "description": [
-        "I had the honors of rebuilding the entire website as my first project as a new Middleweight developer at E78.",
+        "I had the honors of rebuilding the entire website as my first project as a new Mid-weight developer at E78.",
         "Rebuild involved a close collaboration with back end team to create and setup Umbraco, plan out necessary  input fields and data we want to show, and expose all the hooks for front end work",
         "Once the planning and prototyping was done, and BE was being setup, I started working on FE. First thing was to familiarize myself with existing templating system, and while experimenting with it I found it limited and clunky, syntax and nesting had some bugs I had to work around. Then there was Alloy, a fully bespoke in-house styling library which I extended a little to include edge cases I found I needed for the rebuild and additional design layouts.",
         "Once I did the basic setup on FE side, it was time to merge it with BE hooks and see the glorious half-styled data. This was also my first time adding <a href=\"https://schema.org/\" target=\"_blank\" rel=\"noopener\">Schema.org</a> to the site. Alloy also had a lot of interactive elements such as sliders and accordions built in. In retrospect it was an in-house version of modern frameworks such as React and Vuejs.",

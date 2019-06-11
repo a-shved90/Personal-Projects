@@ -2,10 +2,16 @@
   <article class="infoBlock">
     <div class="infoBlock__infoWrapper">
       <h3 class="infoBlock__title">
-        <a :href="link" v-if="link" :title="blockName" target="_blank" rel="noopener">
-          <InfoBlockTitle :title="blockName" :icon="icon"/>
+        <a
+          :href="link"
+          v-if="link"
+          :title="blockName"
+          target="_blank"
+          rel="noopener"
+        >
+          <InfoBlockTitle :title="blockName" :icon="icon" />
         </a>
-        <InfoBlockTitle v-else :title="blockName" :icon="icon"/>
+        <InfoBlockTitle v-else :title="blockName" :icon="icon" />
       </h3>
       <p class="infoBlock__location" v-if="location">{{ location }}</p>
     </div>
@@ -20,17 +26,39 @@
         </template>
       </div>
     </template>
-    <p class="InfoBlock__summary" v-else @click="toggleDesc()" v-html="summary"></p>
-    <div class="infoBlock__description" v-if="description" :class="{ open: isOpen }">
+    <p
+      class="InfoBlock__summary"
+      v-else
+      @click="toggleDesc()"
+      v-html="summary"
+    ></p>
+    <div
+      class="infoBlock__description"
+      v-if="description"
+      :class="{ open: isOpen }"
+    >
       <template v-if="Array.isArray(description) && description.length > 1">
         <transition-accordion>
-          <div v-show="isOpen">
+          <div
+            v-show="isOpen"
+            role="region"
+            :aria-labelledby="'label-' + uuid"
+            :id="'controls-' + uuid"
+          >
             <template v-for="text in description">
               <p v-html="text" :key="text.id"></p>
             </template>
           </div>
         </transition-accordion>
-        <p class="more" @click="toggleDesc()">{{ isOpen ? "Read less" : "Read more" }}</p>
+        <button
+          class="more"
+          :id="'label-' + uuid"
+          :aria-expanded="isOpen ? 'true' : 'false'"
+          :aria-controls="'controls-' + uuid"
+          @click="toggleDesc()"
+        >
+          {{ isOpen ? "Read less" : "Read more" }}
+        </button>
       </template>
       <p v-html="description" v-else></p>
     </div>
@@ -41,6 +69,8 @@
 import TransitionAccordion from "../components/TransitionAccordion.vue";
 import InfoBlockTitle from "../components/InfoBlockTitle.vue";
 import InfoBlockContent from "../components/InfoBlockContent.vue";
+import idGenerator from "../mixins/idGenerator.js";
+
 export default {
   name: "InfoBlock",
   props: {
@@ -53,7 +83,7 @@ export default {
       title: this.content.title,
       link: this.content.link,
       company: this.content.company,
-      location: this.content.role,
+      location: this.content.location,
       role: this.content.role,
       period: this.content.period,
       summary: this.content.summary,
@@ -65,6 +95,7 @@ export default {
       this.isOpen = !this.isOpen;
     }
   },
+  mixins: [idGenerator],
   computed: {
     blockName: function() {
       return this.company ? this.company : this.title;
@@ -162,15 +193,17 @@ $theme: $orange;
       color: $theme;
       text-decoration: underline;
       background: $bgLight;
-      padding-bottom: 20px;
-      margin: 0;
+      margin-bottom: 20px;
+      padding: 0;
+      border: none;
+      font-size: 16px;
       position: relative;
       z-index: 1;
       cursor: pointer;
     }
     &.open {
       .more {
-        padding-top: 10px;
+        margin-top: 10px;
       }
     }
   }
