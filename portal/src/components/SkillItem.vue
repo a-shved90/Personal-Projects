@@ -1,18 +1,22 @@
 <template>
-  <section class="skill" :class="{ open: isOpen }">
-    <p class="skill__name" @click="toggleDesc()">
-      <svg class="icon icon--skill">
-        <use :xlink:href="'#' + skill.logo" :class="skill.logo"></use>
-      </svg>
-      {{ skill.name }}
-      <svg class="icon icon--chevron">
-        <use xlink:href="#chevron"></use>
-      </svg>
-    </p>
-    <transition-accordion>
-      <p class="skill__description" v-show="isOpen">{{ skill.description }}</p>
-    </transition-accordion>
-  </section>
+  <div>
+    <section class="skill" :class="{ open: isOpen }">
+      <p class="skill__name" @click="toggleDesc()">
+        <svg class="icon icon--skill">
+          <use :xlink:href="'#' + skill.logo" :class="skill.logo"></use>
+        </svg>
+        {{ skill.name }}
+        <svg class="icon icon--chevron">
+          <use xlink:href="#chevron"></use>
+        </svg>
+      </p>
+      <transition-accordion>
+        <p class="skill__description" v-show="isOpen">
+          {{ skill.description }}
+        </p>
+      </transition-accordion>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -49,6 +53,9 @@ export default {
     padding: 15px 45px;
     cursor: pointer;
     position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .skill__description {

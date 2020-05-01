@@ -2,16 +2,10 @@
   <article class="infoBlock">
     <div class="infoBlock__infoWrapper">
       <h3 class="infoBlock__title">
-        <a
-          :href="link"
-          v-if="link"
-          :title="blockName"
-          target="_blank"
-          rel="noopener"
-        >
-          <InfoBlockTitle :title="blockName" :icon="icon" />
+        <a :href="link" v-if="link" :title="blockName" target="_blank" rel="noopener">
+          <InfoBlockTitle :title="blockName" :icon="icon"/>
         </a>
-        <InfoBlockTitle v-else :title="blockName" :icon="icon" />
+        <InfoBlockTitle v-else :title="blockName" :icon="icon"/>
       </h3>
       <p class="infoBlock__location" v-if="location">{{ location }}</p>
     </div>
@@ -26,17 +20,8 @@
         </template>
       </div>
     </template>
-    <p
-      class="InfoBlock__summary"
-      v-else
-      @click="toggleDesc()"
-      v-html="summary"
-    ></p>
-    <div
-      class="infoBlock__description"
-      v-if="description"
-      :class="{ open: isOpen }"
-    >
+    <p class="InfoBlock__summary" v-else @click="toggleDesc()" v-html="summary"></p>
+    <div class="infoBlock__description" v-if="description" :class="{ open: isOpen }">
       <template v-if="Array.isArray(description) && description.length > 1">
         <transition-accordion>
           <div
@@ -56,9 +41,7 @@
           :aria-expanded="isOpen ? 'true' : 'false'"
           :aria-controls="'controls-' + uuid"
           @click="toggleDesc()"
-        >
-          {{ isOpen ? "Read less" : "Read more" }}
-        </button>
+        >{{ isOpen ? "Read less" : "Read more" }}</button>
       </template>
       <p v-html="description" v-else></p>
     </div>

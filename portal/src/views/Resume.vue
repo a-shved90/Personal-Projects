@@ -4,15 +4,14 @@
       <div class="col__2-3">
         <h2>My job history</h2>
         <p>
-          I've been around, moved around, and tried new places. I worked for
-          full service agencies and product companies, appreciated both cultures
-          and different approaches. Read below or download a
+          I worked for full service agencies and product-focused companies, in a fast-paced environments and methodical incremental processes.
+          Appreciated both corporate and casual cultures and different approaches. Read below about my experiences or download a shorter 
           <a
             href="assets/Alexander_Shved_CV_2019.pdf"
             target="_blank"
             rel="noopener"
             >PDF version</a
-          >.
+          >
         </p>
         <template v-for="job in jobs">
           <InfoBlock :content="job" :icon="'office'" :key="job.id" />

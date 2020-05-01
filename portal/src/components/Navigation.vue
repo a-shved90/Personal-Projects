@@ -18,18 +18,18 @@
       </svg>
       <p>Portfolio</p>
     </router-link>
-    <!-- <a href="#" to="/blog" class="blog disabled">
+    <router-link to="/blog" class="blog">
       <svg class="icon icon--blog">
-        <use xlink:href="#skills"></use>
+        <use xlink:href="#blog"></use>
       </svg>
       <p>Blog</p>
-    </a> -->
-    <router-link to="/social" class="social">
+    </router-link>
+    <!-- <router-link to="/social" class="social">
       <svg class="icon icon--social">
         <use xlink:href="#contact"></use>
       </svg>
       <p>Social</p>
-    </router-link>
+    </router-link> -->
     <button class="navToggle">
       <span></span>
     </button>
@@ -137,9 +137,6 @@ export default {
       fill: $blue;
     }
     &--blog use {
-      fill: $green;
-    }
-    &--social use {
       fill: $purple;
     }
   }
@@ -173,7 +170,7 @@ export default {
         background-color: rgba($blue, $opacity);
       }
       &.blog {
-        background-color: rgba($green, $opacity);
+        background-color: rgba($purple, $opacity);
       }
       &.social {
         background-color: rgba($purple, $opacity);
@@ -192,7 +189,7 @@ export default {
         background-color: rgba($blue, $opacity);
       }
       &.blog {
-        background-color: rgba($green, $opacity);
+        background-color: rgba($purple, $opacity);
       }
       &.social {
         background-color: rgba($purple, $opacity);

@@ -15,14 +15,24 @@
   },
   "jobs": [
     {
+      "company": "WeTheCurious",
+      "link": "https://www.wethecurious.org/",
+      "logo": "logo",
+      "location": "Bristol",
+      "period": "July 2019 - Present",
+      "role": "Javascript Engineer",
+      "summary": "My very first role in a charity organization. Working with a small team of developers my role includes everything from consulting other departments in relation to digital, to writing software to interact with exhibit hardware. Majority of my role consists of rebuilding current website, introducing new functionality and simplifying updating and user onboarding.",
+      "description": "Currently working on creating a brand new website using React, Nextjs and Strapi as CMS of choice. Overhead includes pre-existing custom built theme website, custom component library, as well as checkout functionality using Tessitura API. All three need to be updated and maintained, while supporting existing site and building a newer version. Side projects include MQTT broker that linked BrightSign and hardware interaction with local gateway, displaying analytics for user interactions."
+    },
+    {
       "company": "fresh8Gaming (Connected Ventures)",
       "link": "http://fresh8gaming.com/",
       "logo": "logo",
       "location": "Bristol",
-      "period": "November 2017 - Present",
+      "period": "November 2017 - February 2019",
       "role": "Front End Engineer",
-      "summary": "A feature-rich role with many technologies across many levels. Vue based development, setting up docker servers, running bash scripts for SQL migrations, to building custom Vue component library.",
-      "description": "I work with client team on a wide range of technologies to deliver innovative and flexible solutions to clients in gambling sector. I am responsible for development of widgets across wide selection of technologies and services, from visual side of things to functionality, frequently moving between FE and BE in order to set everything up and populate correctly, touching up on both SCSS and SQL, not shying away from bash scripts, using Invision, most of development is done using Vue and custom built Vue based platform"
+      "summary": "A feature-rich role with many technologies across many levels. Vue based development, setting up docker servers, running bash scripts for SQL migrations, building custom Vue component library.",
+      "description": "I worked with client team on a wide range of technologies to deliver innovative and flexible solutions to clients in gambling sector. I was responsible for development of widgets as well as design implementation of latest onboarded clients. From visual side of things to functionality, frequently moving between FE and BE in order to set everything up and populate correctly, touching up on both SCSS and SQL, not shying away from bash scripts. We used Invision for designs, I closely collaborated with design team on how best to implement certain features and requirements. Most of development was done using Vue and custom built Vue based platform."
     },
     {
       "company": "Element78 Solutions",
@@ -83,9 +93,9 @@
       "description": "I write clean semantic markup, and currently undergoing a crisis of minimalist vs OO approach that came from modern frameworks such as Vue."
     },
     {
-      "name": "CSS3 + SASS",
+      "name": "CSS + SASS",
       "logo": "css",
-      "description": "My CSS3 includes anything and everything it can get a hold of, if it can be made in CSS - it will be, in a clean, minimalistic and consistent fashion. Unless JS is more appropriate of course."
+      "description": "My CSS includes anything and everything it can get a hold of, if it can be made in CSS - it will be, in a clean, minimalistic and consistent fashion. Unless JS is more appropriate of course."
     },
     {
       "name": "Device and Browser agnostic",
@@ -214,15 +224,15 @@
   ],
   "projects": [
     {
-      "title": "SVG Moscow metro map",
-      "summary": "Heavily inspired by <a href=\"https://web.archive.org/web/20171121043855/http://www.csstubemap.co.uk/\" target=\"_blank\">csstubemap</a>, I thought that yes, HTML/CSS map is great idea, but on paper its completely unmanageable and unusable if you want to add any kind of data manipulation, sorting, shortest-path algorithms etc. After some research the only reasonable solution was SVG - a clean, clear, and elegant way of keeping the map maintainable without the hassle, its SEO friendly, its compliant with any standards, and its fully accessible to JS in a semantic and meaningful way, so data manipulation will be much more accessible and enjoyable task. I'm specifically interested in implementing <a href=\"https://en.wikipedia.org/wiki/A*_search_algorithm\" target=\"_blank\">A* search algorithm</a>"
-    },
-    {
       "title": "webGL 3D model manipulation",
       "summary": [
         "Apparently I have a surprising passion for browser games done right. Most of browser games you see today are flash based, and anything even remotely close to webGL and HTML5 Canvas implementation is either nonexistent or done poorly and can barely be called a game. There are a few pleasant exception though, <a href=\"https://playcanvas.com/\" target=\"_blank\">Play Canvas</a> and <a href=\"http://www.littleworkshop.fr/\" target=\"_blank\">Little workshop</a> being the most notable ones.",
         "I am exceedingly curious to play with this tech myself and see what I can do with this, how far can this be pushed, and even though JS is not an ideal language for expansive browser games - maybe a city management genre would fit it the best. So playing with a house model, setup its building order, 3D view and manipulation, hide/show individual elements etc. and maybe someday push it further than a single model."
       ]
+    },
+    {
+      "title": "SVG Moscow metro map",
+      "summary": "Heavily inspired by <a href=\"https://web.archive.org/web/20171121043855/http://www.csstubemap.co.uk/\" target=\"_blank\">csstubemap</a>, I thought that yes, HTML/CSS map is great idea, but on paper its completely unmanageable and unusable if you want to add any kind of data manipulation, sorting, shortest-path algorithms etc. After some research the only reasonable solution was SVG - a clean, clear, and elegant way of keeping the map maintainable without the hassle, its SEO friendly, its compliant with any standards, and its fully accessible to JS in a semantic and meaningful way, so data manipulation will be much more accessible and enjoyable task. I'm specifically interested in implementing <a href=\"https://en.wikipedia.org/wiki/A*_search_algorithm\" target=\"_blank\">A* search algorithm</a>"
     },
     {
       "title": "Pure CSS dynamic city",

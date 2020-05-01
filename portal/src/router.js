@@ -11,7 +11,7 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
     },
     {
       path: "/resume",
@@ -32,6 +32,18 @@ export default new Router({
         import(/* webpackChunkName: "skills" */ "./views/Skills.vue")
     },
     {
+      path: "/blog",
+      name: "blog",
+      component: () =>
+        import(/* webpackChunkName: "blog" */ "./views/Blog.vue")
+    },
+    {
+      path: "/boo",
+      name: "boo",
+      component: () =>
+        import(/* webpackChunkName: "boo" */ "./views/Boo.vue")
+    },
+    {
       path: "/social",
       name: "social",
       component: () =>
@@ -47,6 +59,6 @@ export default new Router({
       path: "/*",
       name: "404",
       component: () => import(/* webpackChunkName: "404" */ "./views/404.vue")
-    }
-  ]
+    },
+  ],
 });

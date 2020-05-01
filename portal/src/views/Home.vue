@@ -24,9 +24,8 @@
       <div class="col__1-2 portfolio">
         <h2>Projects</h2>
         <p>
-          Very WIP section with both completed work and planned projects, have a
-          look in
-          <a href="/portfolio" class="link">portfolio</a>.
+          For examples of my work and things that interest me check out my 
+          <a href="/portfolio" class="link">portfolio</a>
         </p>
         <InfoBlock :content="projects" :icon="'lightbulb'" />
       </div>
